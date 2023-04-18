@@ -1,0 +1,875 @@
+ Procedia Computer Science   70  ( 2015 )  586  592 
+1877-0509  2015 The Authors. Published by Elsevier B.V. This is an open access article under the CC BY-NC-ND license 
+(http://creativecommons.org/licenses/by-nc-nd/4.0/
+).Peer-review under responsibility of the Organizing Committee of ICECCS 2015
+doi: 10.1016/j.procs.2015.10.040 ScienceDirect
+Available online at 
+www.sciencedirect.com
+4th International Conference on Eco-friendly Computing and Communication Systems, ICECCS 
+2015 Efficient Data Mining Method to Predict the Risk of Heart Diseases 
+through Frequent Itemsets Ilayaraja M*, Meyyappan T Department of Computer Science and Engineerring, Alagappa University, Karaikudi-630 003, Tamil Nadu, India 
+Abstract Data mining techniques are used in the field of medicine for various purposes.  Mining association rule is one of the interesti
+ng 
+topics in data mining which is used to generate frequent items
+ets.  It was first proposed for ma
+rket basket analysis.  Research
+ers 
+proposed variations in techniques to generate frequent itemsets. Generating large number of frequent itemsets is a time 
+consuming process.  In this paper, the authors devised a method to predict the risk level of the patients having heart disease 
+through frequent itemsets.  The dataset of various heart disease patients are used for this research work.  Frequent itemsets a
+re generated based on the chosen symptoms and minimum support v
+alue.  The extracted frequent itemsets help the medical 
+practitioner to make diagnostic decisions and determine the risk level of patients at an early stage.  The proposed method can 
+be applied to any medical dataset to predict the risk factors with risk level of the patients based on chosen factors.  An experim
+ental 
+result shows that the developed method identifies the risk level of patients efficiently from frequent itemsets. 
+ 2015 The Authors. Published by Elsevier B.V. 
+Peer-review under responsibility of 
+the Organizing Committee of ICECCS 2015. 
+Keywords: Frequent Itemsets; Heart Disease Prediction; Association Rule Mining; Data Mining; Medical Data Mining  
+1.Introduction  
+Data mining is now widely used in many domains.  It pl
+ays an important role in the clin
+ical field.  Day by day, 
+large numbers of patients are visiting hosp
+itals for the purpose of various treatments.  Number of patients records 
+are increasing in every department in the hospital.  In medical field, data mining algorithms are used to mine the 
+hidden knowledge in the dataset of the medical domain [1]
+.  The discovered patterns may aid decision making and 
+saving of lives.  Various data mining approaches such as cl
+assification, clustering, associ
+ation rule mining, statistical
+ * Corresponding author. Tel.: +919994719037 ; 
+E-mail address:ilayarajaalu@gmail.com  
+ 2015 The Authors. Published by Elsevier B.V. This is an open access article under the CC BY-NC-ND license 
+(http://creativecommons.org/licenses/by-nc-nd/4.0/
+).Peer-review under responsibility of the Organizing Committee of ICECCS 2015
+587 Ilayaraja M. and Meyyappan T.   /  Procedia Computer Science   70  ( 2015 )  586  592 
+learning and link mining, all have their significance in data
+ research and development [2].  Association rule mining 
+is a most efficient algorithm for extracting frequent itemsets from huge data. 
+ To find out the frequent itemsets, 
+minimum support value has been used.  Support value of the itemset greater than or equal to minimum support value 
+is called frequent itemset.  If an itemset is frequent, then all of its subsets also must be frequent [3]. 
+Heart disease is the one of the leadin
+g human killer diseases.  In United S
+tates, the cause of death for both men 
+and women is primarily by heart disease.  It is an 
+equal opportunity killer which 
+claims approximately 1 million 
+lives annually.  The disease had killed nearly 787,000 pe
+ople alone in 2011 and 380,
+000 people annually by heart disease.  Every 30 seconds someone has a heart attack and someone dies from a heart related disease in every 60 
+
+seconds [4].   
+In this paper, the authors proposed a 
+new mining method to predi
+ct the risk level of heart disease based on chosen 
+symptoms by analyzing the heart disease dataset.  The predictions of this method will help the medical practitioners 
+in making diagnostic decisions to save lives of patients at risk. 
+2.Literature Review  
+Usha Rani et al. has introduced pincer search algorithm 
+to discover the maximum frequent itemset [5].  It also 
+reduces number of times the database is scanned.  Fre
+quent itemset mining without the generation of conditional 
+frequent pattern tress was expressed by Meera Narvekar et al. [6]. The desired association rules are also discovered 
+from the frequent itemset.  Alagugowri et al. developed 
+a predicting system to predict the heart disease [7].  K-
+Means clustering technique is used to 
+distinguish the risky and non-risky factors to categorize.  Tzung-Pei Hong et 
+al. developed MFFP-Tree Fuzzy Mining Algorithm to find out the linguistic frequent Itemsets [8].  Marghny et al. 
+
+has developed a new method to mine frequent itemset 
+by avoiding the costly candidate generation-and-test 
+processing.  It also compresses essential information 
+about all itemset, minimal and maximal length of frequent 
+itemsets and database scans repeatedly [9].  Jahangir Kabir 
+et al. proposed a novel method to determine maximal 
+frequent itemsets with genetic algorithm 
+[10].  The weighted support measure is
+ introduced by Subrata Bose et al. 
+that adopted a balanced approach to mine frequent pattern
+s [11].  To mine frequent closed sequential pattern in 
+temporal transaction data, Antonio Gomari
+z et al. proposed a ClaSP algorithm 
+[12].  To mine frequent itemset based 
+on nodesets, an efficient FIN algorithm was developed by Zhi-Hong Deng et al. [13].  Hai Duong et al. developed a 
+
+new algorithm with double constraint
+s to find out all frequent itemsets [14].  Mengchi Liu et al. proposed a HUI-
+Miner (High Utility Itemset Miner) algorithm to mine high utility itemset [15].  Umair Shafique et al. implemented 
+
+three various algorithms (Neural Network, Decision Tree 
+and Nave Bayes) to discov
+er interesting patterns from 
+heart patients data.  The results reveal that the Nave Bayes algorithm has the highest accuracy among them [16].  
+
+Darshan M. Tank has proposed an algorithm to reduce pruning 
+operations.  It uses aprior
+i-gen operation to generate 
+the candidate itemsets-2 and also it calculates support value qui
+ckly by adopting the tag-counting method [3].  Deepa 
+S. Deshpande proposed a novel method 
+for mining association rule using patter 
+generation.  To find out frequent 
+feature set, the Boolean operations fo
+r pattern generation is adopted [17].  Zhou Zhiping et al. introduced matrix-
+based sorting index association rules algorithm to find th
+e frequency k-itemsets directly.
+  It discovers k-itemsets 
+directly when frequent item sets are higher [18].  Chanchal Yadav et al. developed a new algorithm to decrease the 
+
+pruning operation of candidate itemset.  It also reduces storage space requirement [2].  Amr Jadi et al. proposed an 
+
+algorithm to predict and mitig
+ate the risks by using runtime 
+monitoring with neural ne
+tworks [19].  Sallam Osman 
+Fageeri et al. introduced a binary-based technique to find
+ out the frequent itemsets that outperforms classic Apriori 
+algorithm in terms of running time [20].  To estimate th
+e size of candidate itemsets in Apriori based algorithms, 
+linear algebra method was used by Savo Tomovi
+ et al. [21].  Sen Su et al. has de
+signed differentially private FIM 
+algorithm to offer high time efficiency rath
+er than achieve high data utility and 
+degree of privacy [22].
+  This survey 
+indicates that many algorithms were
+ developed by researchers to genera
+te frequent itemsets.  A new method 
+proposed in this paper generates frequent itemsets effi
+ciently based on chosen symptoms and support value. 
+3.Data Source  
+Simulated heart disease dataset containing 1000 patient 
+records are used for this research work.  This dataset 
+contains 19 symptoms as shown in Table 1.  They are the symptoms of various heart diseases, namely 
+588   Ilayaraja M. and Meyyappan T.   /  Procedia Computer Science   70  ( 2015 )  586  592 
+Ather
+o(VH
+DSI234567894.Pr
+oIn tpatienhospi
+tdifficualgoritmethoAlso, 
+items
+ethe engener
+acomp
+aosclerotic Dise
+aD) and Heart In
+feTable Symptom 
+ID Sym1. Che2. Sho3. Painyouthos4. Painor 
+b5. Flut6. Rac7. Slow8. Lig9. Fain10. Br
+eoposed Metho
+dtoday's world, 
+ants affected by htals, the medic
+ault to extract th
+ethms are devel
+ood to predict t
+hit discovers th
+eets.  It removes 
+ntire column (i
+tation and impr
+oarisons.  Figure ase (AD), Hea
+rfections (HI) [2
+41. Symptoms of V
+amptom (Attribute) 
+Nest pain (angina) ortness of breath n, numbness, weak
+nur legs or arms if th
+ese parts of your bo
+dn in the neck, jaw, 
+tback ttering in your che
+scing heartbeat (tach
+yw heartbeat (brady
+chtheadedness 
+nting (syncope) or 
+neathlessness with e
+xdology
+a lot of people 
+aheart diseases i
+al records of p
+ae useful inform
+aoped to extract 
+the patients und
+ee risk level of 
+the factors (ite
+mtemset) is rem
+ooves the effici
+e1 shows the fl
+ort Arrhythmias 
+4].   
+arious Heart Disea
+sName 
+ness or coldness in e blood vessels in 
+dy are narrowed 
+throat, upper abdomst ycardia) 
+cardia) 
+near fainting xertion or at res
+t are frequently a
+fs increasing.  
+Hatients with va
+ration from the 
+vthe useful kno
+wer risk based o
+nthose patients. 
+msets) that do 
+noved from fur
+tency of itemset
+sow of the propo
+sFig. 1. Block D(HA), Dilatedses 
+Symptom 
+ID 
+11. 
+12. 
+13. 
+men 14. 
+15. 
+16. 
+
+17. 
+18. 
+19. 
+ ffected by vari
+oHeart disease i
+srious diseases avast volume of 
+rwledge from m
+an the chosen s
+y The propose
+dnot satisfy the s
+uther analysis.  
+s generation.  
+Ised method. 
+iagram of the Prop
+od Cardiomyopa
+tSymptom (Attri
+bSwelling of the aSwelling in your 
+Fatigue 
+Irregular heartbe
+fluttering  Fever Swelling in your 
+
+Changes in your 
+Dry or persistentSkin rashes or un ous heart relate
+ds one of the lea
+are maintained 
+records manual
+lassive data.  In tymptoms by a
+nd algorithm av
+oupport value.  
+RIt simplifies t
+hIt saves execut
+iosed Method. thy (DC), Val
+vbute) Name 
+ankles and feet legs 
+ats that feel rapid, 
+pabdomen 
+heart rhythm 
+t cough 
+nusual spots 
+d diseases.  Eve
+rding dangerou
+sin electronic 
+mly.  Nowadays, sthis paper, the 
+analyzing the h
+eoids the generatRows (record) hhe collection o
+fion time by av
+ovular Heart Di
+spounding or 
+ry day, the cou
+ns diseases.  In 
+mmedium.  It is 
+vseveral data mi
+nauthors develop
+eart disease dat
+ation of unnece
+shaving zero val
+uf frequent ite
+moiding unnecessease 
+nt of most 
+very ning 
+ed a 
+aset.  ssary 
+ue in 
+msets 
+ssary 
+589 Ilayaraja M. and Meyyappan T.   /  Procedia Computer Science   70  ( 2015 )  586  592 
+4.1.Algorithm 
+Input 
+D - Heart Disease Dataset 
+ms - Minimum support threshold value (0.1 - 1) 
+mps - Minimum percentage of symptoms (0.1 - 1) 
+s  Symptoms 
+
+Output
+Fk - Frequent Itemsets 
+Method 
+Step 1: 
+ts  Total number of symptoms (s) 
+k = ts Combine all the chosen symptoms s using logical AN
+D operation.  Then finds a zero value in the combined 
+columns and deletes that particular row. 
+Find the sum value of this column.
+
+Calculate the support value for column using the formula: 
+cordser of Total Numbof ColumnSum Value SSupport
+Re)(
+  if S < ms then terminate the process 
+elseCombined column consid
+er as frequent itemset F
+k.  Then perform logical AND with F
+k and all other columns.  
+Repeat steps 2 to 5 until dataset is null. 
+
+Step 2: 
+
+Find the sum values in each column of the table.
+Step 3: 
+Calculate the support value for each column using the formula: 
+cordser of Total Numbof ColumnSum Value SSupport
+Re)(
+  Step 4: 
+
+If S < ms then delete the column from the table. 
+k = k+1       
+Add the column in table to Frequent Itemset F
+k Step 5: 
+Combines the column Max(F
+k) with all other attributes without repetitiv
+e using logical AND operation.  Delete the 
+row having zero value in the entire column. 
+Step 6: 
+Calculate the percentage of symptoms for 
+each frequent itemsets using the formula: 
+1...n)k 1...m,
+(i                                                                                                                  
+ 
+ikiiseaseptoms in Dber of Symer of  NumTotal NumbFappe
+ar in  Symptoms DiseaseNumber of ms (PS) of SymptoPercentage If PSmps then all these frequent itemsets are indicate risk factors of patients having heart disease.
+Convert the dataset into binary format denoting the presence or absence of symptom that causes heart disease as 1 
+or 0 respectively.  Dataset with minimum support value, 
+minimum percentage of symptoms and the symptoms are 
+given as input to the proposed method.  In the first step
+, combine all the chosen symptoms (columns) using logical 
+AND operation.  Then find a zero value in the combined column
+s and delete that particular row.  Find the sum value 
+of the combined column and calculate the support value of
+ this column using the formula mentioned in the 
+590   Ilayaraja M. and Meyyappan T.   /  Procedia Computer Science   70  ( 2015 )  586  592 
+algoritOther
+wfrequ
+eand cavalue less thunsati
+
+all othproce
+sthe itementi
+ogreatepatien5.Re
+sIn tby thepractitTheinclud(attribPerpropo
+sTechngener
+arequir
+of ite
+mmethoPloMajo
+rflutterPlocomb
+iin the 
+affectenumb
+eof sy
+mthm. The proc
+wise the combi
+nent itemset F
+k walculate the su
+pof the each col
+han the minim
+usfying column. 
+her columns usi
+nss from steps 2 
+temsets F
+k.  In oned in the ste
+per than or equal 
+nts who will be 
+asult and Discu
+sthis paper, 
+the ae user.  It helps 
+tioners to predi
+ce developed 
+mdes data of 10
+0butes) of the dat
+arformance of t
+hsed method.  T
+anique [20], and 
+ate all the possi
+bement.  The pr
+omsets are very 
+mod.  The limitati
+oot in Fig. 2 is d
+rrity of the pati
+ering symptoms 
+fot in Fig. 3 sho
+wination of chos
+echosen dataset 
+ed by chosen s
+er of patients a
+rmptoms like ch
+eess has been 
+tned column is 
+cwith all other c
+opport value for 
+umn with user 
+um support val
+u In the step 5, 
+ng logical AN
+Dto 5 repeatedly 
+step 6, calculap 6 of the alg
+oto user given 
+maffected by the 
+hssions  
+authors have de
+vto identify the 
+ct the risk level 
+method is succe00 patients aff
+easet are shown 
+ihe proposed 
+mable 2 shows th
+eAssociation 
+Rble itemsets in 
+eoposed method 
+much reduced i
+non of the existi
+nrawn to have s
+tents are affect
+efor the chosen 
+dws the results f
+oen symptoms a
+nmay be includ
+eymptoms but 
+bre affected by 
+aest pain, shortn
+eFig. 2. Num
+bterminated if t
+hconsidered as fr
+eolumns.  In the 
+each column u
+sgiven minimu
+mue.  All the co
+lfind the colu
+mnD operation.  D
+euntil dataset b
+eate the percentaorithm.  Finall
+yminimum perce
+nheart disease w
+iveloped a meth
+opatients at risk 
+of patients wh
+ossfully imple
+mected by heart 
+in Table 1. 
+method is com
+pe comparison 
+wRule Mining Aleach iteration, 
+tdoes not gener
+an the proposed 
+ng techniques i
+statistical informed by shortness 
+dataset. or minimum su
+pnd also affected 
+ed in the comb
+ibelow 60% of 
+satleast 60% of thess of breath, fa
+tber of patients affe
+che support val
+uequent itemset 
+Fnext two steps
+sing the formu
+lm support valu
+elumn are consi
+dn which has th
+eelete the row ha
+vcomes null.  Fi
+nage of sympto
+my, it extracts all ntage of sympto
+ith risk level. 
+od to generate t
+hfrom the extra
+o will be affect
+emented with Javrelated diseasepared with exiswith Apriori Al
+glgorithm Basedthus increasing 
+tate the unnece
+smethod.  This 
+is overcome by 
+tmation on num
+bof breath and 
+pport value=0.1by atleast 60% ination.  The z
+esymptoms of a 
+he symptoms o
+ftigue or faintin
+gcted by different sy
+mue has been l
+eFk.  Then perfo
+r, find the sum 
+vla mentioned a
+be.  Delete the c
+odered as frequ
+ee maximum su
+mving zero value 
+nally, it genera
+tms for each frethe itemsets 
+wms.  The extra
+che frequent itemcted itemsets.  
+ed by heart dise
+ava programmin
+gs with 19 clinisting methods 
+gorithm [23], I
+Md on Pattern G
+ethe computatio
+nssary itemsets i
+nis the major re
+sthe developed 
+mber of patients 
+athe lowest nu
+m1.  It predicts t
+hof specific symero value indica
+tdisease.   Fro
+mf Valvular Hea
+rg.     
+mptoms causing he
+aess than mini
+mrm the logical 
+Avalues in each 
+bove.  In step 
+4olumn which h
+aent itemset F
+k+m value, combi
+nin the entire c
+otes the maximu
+mequent itemset
+swhich has perc
+ected itemsets aremsets based on tThe findings 
+wase.  
+g language.  
+Tical attributes. 
+to establish th
+eMSIA Algorithmeneration [17]. 
+n time in comp
+an each frequent 
+search contribu
+tmethod. 
+affected by 19 
+dmber of patien
+the number of p
+amptoms of a dis
+etes the number 
+m the plot, it i
+srt Disease (VHDart disease 
+mum support v
+aAND opera
+tion 
+column of the 
+t4, check the su
+pas the support 
+v1 after deletin
+gnes the column 
+olumn.  Perfor
+mm possible leng
+ts using the for
+mentage of symp
+te used to predi
+cthe symptoms 
+gwill help the me
+dThe training da
+ List of symp
+te efficiency o
+fm [18], Semi-A
+p Existing met
+harisons and me
+mitemsets.  Nu
+mtion in the prop
+different sympt
+ots are affected 
+atients affected 
+ease.  Any sym
+pof patients wh
+os evident that 
+mD) and combin
+a alue.  
+with table 
+pport 
+value g the 
+with 
+m this 
+th of 
+mula 
+toms 
+ct the given dical ataset toms 
+f the 
+priori hods 
+mory 
+mbers osed oms.    
+with by a 
+ptom 
+o are 
+more ation 
+591 Ilayaraja M. and Meyyappan T.   /  Procedia Computer Science   70  ( 2015 )  586  592 
+ Tafrequ
+frequ
+
+not r
+ewhenover
+cassumpropoitem
+sprevi
+opatienFreqItemItemItemItemItemItemItemItemItem6.CoMefind fauthoaffectFig. able 2 shows th
+eent itemset.  
+Tent itemset wh
+ielevant to parti
+n the disease be
+come in the pr
+omed as frequen
+tosed method en
+sset.  Other itemous frequent it
+ents.  In this wa
+yTablequent msets 
+ExistinAprioriAlgorit[23] 
+mset-1 19 
+mset-2 171 
+mset-3 741 
+mset-4 1218 
+mset-5 922 
+mset-6 386 
+mset-7 77 
+mset-8 6 
+onclusion  
+edical data mi
+nfrequent items
+eors proposed an 
+ted by heart di
+3. Analysis of Hea
+re result with th
+eThe drawback 
+oich requires mo
+cular combinat
+ars more num
+boposed method
+.t itemse
+t-3.  T
+hsures that the s
+ymsets which do emset are inclu
+dy, the proposed 
+me 2. Comparison of 
+ng Methods 
+i thm IMSIA 
+Algorithm[15] 
+19 
+171 
+741 
+1218 
+
+922 
+386 
+77 
+6 ning plays a vit
+aet from patient 
+ efficient meth
+osease.  The de
+vrt Disease Dataset 
+ae given support 
+of these metho
+dre storage spac
+eion of symp
+tomber of symptom
+.  In this anal
+yherefore, the fi
+rymptoms of a c
+hnot include th
+ded in the next method finds fr
+eProposed Method 
+wm Semi-Aprior
+iTechnique [18] 
+19 
+171 
+741 
+1218 
+
+922 
+386 
+77 
+6 al role in the d
+idata to predic
+od that finds fr
+eveloped metho
+dagainst combinatio
+nvalue 0.1.  Exi
+sds is two-fold. 
+e to retain all t
+hms used for an
+as.  This is the mysis, a particul
+arst two itemset
+shosen combina
+tem are ignore
+dfrequent items
+eequent itemset 
+qwith Existing Methoi Association Rule Mining 
+Algorithm 
+Based on PatterGeneration [1419 
+171 
+741 
+1218 
+
+922 
+386 
+77 
+6 agnosis of dise
+t the symptom
+equent itemset
+sd analyses and 
+ns of symptoms wit
+hsting methods g
+ Firstly, it genhe sets.  Secon
+dalysis.  Numbe
+rmajor drawbackar combination 
+s are not gener
+ation are includ
+ed.  It also ens
+uet provided tho
+quickly compa
+rods. Proposed Metrn 4] Based on the symptoms: 
+
+Chest pain, Shortness of Breath, Fatigu- - 1 16 
+
+12 
+7 3 - ases and in lif
+es causing dan
+gs and risk level 
+predicts the n
+uh ms=0.1 and mps
+=enerate all pos
+snerates very la
+rdly, it includes 
+sr of itemsets i
+nk of the existin
+gcontains three 
+ated in the pro
+ped in all itemset 
+ures that the symose symptoms a
+red to existing 
+mthod ue Based on the symptoms: 
+Chest pain, Shortness of 
+Breath, Fainting - - 1 15 
+
+12 
+7 3 - e saving decisio
+gerous diseases.to predict the pumber of patie
+ =0.6 
+sible itemsets i
+nrge itemsets in 
+symptoms whi
+cncreases inordi
+ng methods, wh
+isymptoms wh
+iposed method. 
+of the each fre
+qmptoms includ
+ffect majority omethods.  Based on the symptoms: 
+Chest pain, LightheadedneFatigue - - 1 14 
+
+12 
+9 2 1 ns.  It is essen
+t.  In this pape
+rpatients who 
+wnts at risk leven each each 
+ch are nately ich is 
+ich is  The 
+quent 
+ed in 
+of the 
+ess, tial to 
+r, the 
+will be 
+el.  It 
+592   Ilayaraja M. and Meyyappan T.   /  Procedia Computer Science   70  ( 2015 )  586  592 
+provides a rapid aid to the medical practitioner in making em
+ergency decisions to save the lives of patients at risk 
+level. In the proposed method, symp
+toms representing columns and patient 
+records representing rows are removed 
+from further analysis, if they do not satisfy the chosen rules.  The proposed 
+method is applied over a heart disease 
+dataset of 1000 records of patients suffering from various heart related diseases.  The prediction results are 
+encouraging and the efficiency of the 
+method in frequent itemset generation 
+is better than existing methods.  
+References 
+1.Saurav Mallik, Anirban Mukhopadhyay, Ujjwal Maulik. RANWAR: Rank-Based Weighted Association Rule Mining from Gene Expression 
+and Methylation Data. IEEE Transact
+ions on NanoBioscience 2013; 14:59-66. 
+2.Chanchal Yadav, Shuliang Wang, Manoj Kumar. An Approach to
+ Improve Apriori Algorithm Based on Association rule Mining.  
+International Conference on Computing, Communications and Networking Technologies (ICCCNT) 2013;1-9. 
+3.Darshan M. Tank. Improved Apriori Algorithm for Mining Asso
+ciation Rules. International Journal of Information Technology and
+ Computer Science (IJITCS) 2014; 6:15-23. 
+4.The heart foundation http://www.theheartfoundation.org/heart-disease-facts/heart-disease-statistics/ 
+5.Usha Rani G, Vijaya Prakash R, Govardhan A. Mining Multilevel Association Rule Using Pincer Search Algorithm. International J
+ournal of Scientific Research 2013; 2. 
+6.Meera Narvekar, Shafaque Fatma Syed. An Optimized Algor
+ithm for Association Rule Mining using FP Tree. International Conferen
+ce on 
+Advanced Computing Technologies and Applications 2015; 45:101-110.  
+7.Alagugowri S, Christopher T. Enhanced Heart Disease Analysi
+s and Prediction System [EHDAPS] Using Data Mining. International 
+Journal 
+of Emerging Trends in Science and Technology 2014; 1:1555-1560. 
+8.Tzung-Pei Hong, Chun-Wei Lin, Tsung-Ching Lin. The MFFP-Tree Fuzzy Mining Algorithm to Discover Complete Linguistic Frequent 
+Itemsets. International Journal of Computational Intelligence 2014; 30:145166. 
+9.Marghny H, Mohamed, Mohammed M, Darw
+ieesh. Efficient Mining Frequent Itemsets 
+Algorithms. International Journal of Machine 
+Learning and Cybernetics 2013; 5:823-833. 
+10.Mir Md. Jahangir Kabir, Shuxiang Xu, Byeong Ho Kang, Zongyuan Zh
+ao. A Novel Approach to Mining Maximal Frequent Itemsets Bas
+ed 
+on Genetic Algorithm. 9th International Conference on Information T
+echnology and Applications (ICITA), at Sydney, Australia, 20
+14. 
+11.Subrata Bose and Subrata Datta. Frequent Pattern Generation in
+ Association Rule Mining using Weighted Support. Third Interna
+tional Conference on Computer, Communication, Control and Information Technology (C3IT) 2015; 1-5. 
+12.Antonio Gomariz, Manuel Campos, Roque Marin, Bart Goethals. Cl
+aSP: An Efficient Algorithm for Mining Frequent Closed Sequenc
+es.
+ Advances in Knowledge Discovery and Data Mining 2013; 7818:50-61. 
+13.Zhi-Hong Deng, Sheng-Long Lv. Fast Mining Frequent Itemsets using Nodesets. Expert Systems with Applications 2014; 41:4505-4
+512. 
+14.Hai Duong, Tin Truong, Bay Vo. An Efficien
+t Method for Mining Frequent Itemsets with Double Constraints. Engineering Applica
+tions of 
+Artificial Intelligence 2014; 27:148-154. 
+15.Mengchi Liu, Junfeng Qu. Mining High Utility Itemsets without Candidate Generation. Proceedings of the 21st ACM International 
+Conference on Information and Knowledge Management 2012; 55-64. 
+16.Umair Shafique, Fiaz Majeed, Haseeb Qaiser, Irfan Ul Mustafa.
+ Data Mining in Healthcare for Heart Diseases. International Jo
+urnal of 
+Innovation and Applied Studies 2015; 10:1312-1322. 
+17.Deepa S. Deshpande. A Novel Approach for Association Rule Mi
+ning using Pattern Generation. International Journal of Informat
+ion
+ Technology and Computer Science(IJITCS) 2014; 6:59-65. 
+18.Zhou Zhiping, Wang Jiefeng. An Improved Matrix Sorting 
+Index Association Rule Data Mining Algorithm. 33rd Chinese Control Co
+nference 
+Proceedings, China 2014; 28-30. 
+19.Amr Jadi, Hussein Zedan, Turki Alghamdi. Risk Management ba
+sed Early Warning System for Healthcare Industry. International C
+onference 
+on Computer Medical Applications (ICCMA) 2013; 1-6. 
+20.Sallam Osman Fageeri, Rohiza Ahmad, Baharu
+m B. Baharudin. A Semi-Apriori Algorith
+m for Discovering the Frequent Itemsets. 
+International Conference on Computer and 
+Information Sciences (ICCOINS) 2014; 1-5. 
+21.Savo Tomovi
+, Predrag Stanii
+. Upper Bounds on the Number of Candidate Itemsets in Apriori Like Algorithms. 3rd Mediterranean 
+Conference on Embedded Computing (MECO) 2014; 260-263. 
+22.Sen Su, Shengzhi Xu, Xiang Cheng, Zhengyi Li, Fangchun Yang. 
+Differentially Private Frequent Itemset Mining via Transaction 
+Splitting. 
+IEEE Transactions on Knowledge and 
+Data Engineering 2015; 27:1875-1891. 
+23.Ilayaraja M, Meyyappan T. Mining Medical Data to Identify Frequent Diseases using Apriori Algorithm. Proceedings of the Inte
+rnational 
+Conference on Pattern Recognition, Informatics and Mobile Engineering 2013; 194199. 
+24.http://www.mayoclinic.org/diseases-conditions/heart-disease/basics/symptoms/con-20034056. 

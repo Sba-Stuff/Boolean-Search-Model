@@ -1,0 +1,150 @@
+Available online at www.sciencedirect.com
+2212-8271  2017 The Authors. Published by Elsevier B.V. This is an open access article under the CC BY-NC-ND license 
+(http://creativecommons.org/licenses/by-nc-nd/4.0/
+).Peer-review under responsibility of the scientific committee of the 9th CIRP IPSS Conference: Circular Perspectives on Product/Service-Systems.
+doi: 10.1016/j.procir.2017.03.131 
+ Procedia CIRP   64  ( 2017 )  306  311 
+ScienceDirect
+The 9th CIRP IPSS Conference: Circular Perspectives on Product/Service-Systems Data Mining in Product Service Systems Design: Literature Review and Research Questions  Alessandro Bertoni*, Tobias Larsson  Blekinge Institute of Technology, Campus Grsvik, 37179 Karlskrona, Sweden 
+ * Corresponding author. Tel.: +46 455 38 55 02. E-mail address: alessandro.bertoni@bth.se Abstract The paper presents a literature review about data mining appli
+cations in Product/Service-Systems (PSS) design. A systematic lit
+erature review, combined with snowballing techniques, has been run to identify re
+levant contributions in the area. The analysis has focused on the categorization of the contributions according to their impact on the PSS design process and according to their theoretical or e
+mpirical nature. A 
+picture of the different research achievements for each stage of the PSS design process have been drawn, identifying the research gaps in respect to the challenges of PSS design. Based on the analysis the paper proposes a set of research questions for each PSS design stage with the 
+intent of facilitating the application of data mining techniques 
+in PSS design, and ultimately push forward the state of the ar
+t.   2017 The Authors. Published by Elsevier B.V. Peer-review under responsibility of the scientific committee of the 9th CIRP IPSS Conference: Circular Perspectives on Product/
+Service-
+Systems.  Keywords: Product service systems design; data mining; research questions; literature review.  1. Introduction Information and communication technologies have revolutionised lifestyles, global interaction and industrial 
+
+working practices. Companies are nowadays potentially 
+
+capable of collecting data about any product lifecycle activity 
+and performance. Devices and sensors may become smart 
+and are used in a variety of contexts: from monitoring the performances of machines, to predict failures and run 
+preventive maintenance, to provide driving assistance and to 
+manage a whole fleet of vehicles based on GPS (see for 
+
+instance [1-3]). The use of data mining in combination with 
+the development of IT infrastructures and with increased data storage capabilities, has propelled a profound shift toward 
+
+more transparent, informed and autonomous decision-making [4]. However, while companies are often in the situation of 
+
+being capable of collecting a huge amount of data, their use is 
+often limited to maintenance and management purposes; more 
+rarely those data become useful knowledge and insights in the 
+design phase of a new products or services. A challenge is given by the multi-dimensional and multidisciplinary nature of 
+
+the design process, generating a large amount of 
+heterogeneous data for which suitable mining methods are not 
+
+readily available [5], accentuated by a generic lack of context 
+around the situation where data is collected. In the 
+development of products and services combinations, i.e. 
+product/service-systems (PSS), a formalized approach on how to use data to develop new and more value adding solutions is 
+
+missing. This is due to the relative novelty of both the PSS 
+design field and of the data mining field, which have developed with different focuses requiring different expertise.   The research presented in this paper has the purpose to explore the potential that resides in the integration of data 
+mining techniques into methods and tools for PSS design. The 
+aim of the paper is therefore to investigate, and review, the 
+theoretical and empirical applications of data mining in PSS design literature, by:  Mapping and analyzing the curre
+nt contributions into the PSS design process.   2017 The Authors. Published by Elsevier B.V. This is an open access article under the CC BY-NC-ND license 
+(http://creativecommons.org/licenses/by-nc-nd/4.0/
+).Peer-review under responsibility of the scienti c committee of the 9th CIRP IPSS Conference: Circular Perspectives on Product/Service-Systems.
+307 Alessandro Bertoni and Tobias Larsson  /  Procedia CIRP   64  ( 2017 )  306  311 
+ Highlighting a list of research questions to be addressed to 
+enable a wider application of data mining into PSS design. The paper first describes the methodology applied in the literature review by briefly presenting the PSS design process 
+used as a reference for the analysis. In section 3 the literature review and the analysis are presented together with a number of identified research questions. Section 4 closes the paper by 
+drawing the final conclusions. 2. Methodology 
+The research was initially a
+pproached through a literature search run on a major research database (i.e. Scopus1). The scope of the search was deliberately limited to those papers presenting the use of data mining techniques referring to the 
+design of PSS or to the conjunct design of products and 
+services. The concept of machine learning, although not 
+
+synonym of data mining (as explain in section 3) was also included in the research, to assure the completeness of the 
+
+results. In a first step a systematic research for papers was performed. The search was directed toward titles, abstracts or 
+
+keywords containing the term product service systems in combination with either data 
+mining machine learning or data science. This first round of analysis led to the 
+identification of only 13 unique papers. Due to such limited 
+number of publications the literature base was expanded by 
+
+applying a snowballing technique [6] on the initial set of 
+
+papers. The reference list of each of the paper was screened 
+for relevant contributions and 21 papers were selected for 
+
+detailed analysis at the end of the process.  Those papers were later analyzed by classifying their content and contribution in relation to the PSS design process. To define the categories for analysis the Generic IPSS/PSS 
+
+development process model by Mller and Stark [7] was 
+
+adopted as reference. The model is V-shaped and 
+encompasses 4 levels of detail: market/customer/environment 
+
+level, value level, system level, module and component level. For each level, different activities take place involving 
+different stakeholders. The following five main activities have 
+
+been identified in accordance to the model and have been 
+used to provide a first classification of the literature:  Planning  Idea generation   Embodiment design for subsystem 
+ Detailed design  Delivery and use phase  The papers were further categorized by adding a distinction between those describing a framework or a conceptual 
+method and those providing examples of real case study applications. The classification was run in a way that each 
+paper could be assigned only to one category. The 
+discriminant for the selection was the main contribution of   1 www.scopus.com the paper, evaluated based on the content and on the 
+terminology stressed by the authors in the conclusion 
+section of the papers.  The analysis of the literature and the research questions derived are the result of an analytical process applied to a 
+critical literature review (similarly to what described by 
+
+Jessons and Lacey [8]). The theoretical contributions were 
+analyzed in respect with the available examples in applied 
+research. This has allowed the production of a general 
+
+framework of analysis in consideration of the main issues and 
+
+challenges recognized in literature for the design of PSS, 
+encompassing weak and sweets spots of the main PSS design 
+
+methods and tools. Upon this basis, the direct impact on 
+applied practice was the driving criterion for the definition of 
+
+the questions, with a focus on the empirical benefits of 
+developing more advanced method and tools for PSS design. 3. Data mining in PSS design: contributions and research 
+questions Data mining is defined as the discovery of non-trivial, 
+implicit, previously unknown, and potentially useful and understandable patterns from large datasets [9]. When it 
+comes to application of data mining in industrial 
+environments, the term is often associated with the concept of 
+
+machine learning, i.e. the study 
+of computer algorithms that improve automatically through experience [10]. Data mining 
+and machine learning are used in engineering both with the predictive goal of forecasting the value of a variable and with 
+the descriptive goal of understanding and discovering patterns 
+in the available data [9]. The following sub-sections provide 
+
+an account of the application of data mining and machine 
+learning available in literature highlighting applications 
+explicitly referring to the context of PSS design. 
+3.1. Summary of state-of-the-art and paper categorization The papers identified in the literature review have been 
+first categorized based on if their main contribution in respect to the PSS design process, and then based on the type of 
+academic contribution, that is, if the paper presented a 
+conceptual framework or method, or if it concerned the 
+presentation of a real case implementation of an approach. A further distinction was made based on the terminology used 
+
+when referring to the design of product and service 
+combinations, i.e., the papers e
+xplicitly referring to PSS in the 
+text, and the papers not directly using the PSS terminology 
+even if dealing with relevant t
+opics for the investigation. The 
+reason for doing this last classification was to verify the 
+
+popularity of the data mining topic in the major publication arena for PSS research. The results of the classification are visualized in Figure 1. The numbers in the white circles indicate the number of 
+
+publications for each category directly or indirectly related to 
+the development of PSS, the numbers in the grey circles indicate instead the number of those publications explicitly 
+
+referring to a PSS terminology. 
+ 308   Alessandro Bertoni and Tobias Larsson  /  Procedia CIRP   64  ( 2017 )  306  311 
+309 Alessandro Bertoni and Tobias Larsson  /  Procedia CIRP   64  ( 2017 )  306  311 
+310   Alessandro Bertoni and Tobias Larsson  /  Procedia CIRP   64  ( 2017 )  306  311 
+311 Alessandro Bertoni and Tobias Larsson  /  Procedia CIRP   64  ( 2017 )  306  311 

@@ -1,0 +1,485 @@
+ A VECTOR SPACE MODEL FOR INFORMATION RETRIEVAL: A MATLAB APPROACH  A. B. Manwar 
+Department of Computer Science, 
+S.G.B. Amravati University, Amravati MS, India 
+avinash.manwar@gmail.com
+ Hemant S. Mahalle Department of Computer Science, 
+P. N. College, Pusad, Dist. Yavatmal  MS, India 
+mahalle_hemant@yahoo.co.in
+ K. D. Chinchkhede Department of Applied Electronics, 
+S.G.B. Amravati University, Amravati MS, India  
+krish.chinchkhede@gmail.com
+ Dr. Vinay Chavan 
+Department of Computer Science, 
+S. K. Porwal College, Kamptee, Nagpur MS, India 
+drvinaychavan@yahoo.co.in
+    
+Abstract 
+By and large, three classic framework models have been used in the process of retrieving information: Boolean, 
+Vector Space and Probabilistic. Boolean model is a light weight model whic
+h matches the query with precise 
+semantics. Because of its boolean nature, results may be tides, missing partial matching, while on the contrary, 
+
+vector space model, considering term-frequency, inve
+rse document frequency measures, achieves utmost 
+relevancy in retrieving documents in information retrieva
+l. This paper implements and discusses the issues of 
+information retrieval system with
+ vector space model using MATLAB 
+on Cranfield data collection of 
+aerodynamics domain. 
+Keywords
+: tf; idf; vector space model; cosine similarities; 
+term-document; term-query matrices; dot products. 
+1. Introduction 
+Enormous amount of text material is increasing at e
+xponential rate, especially with the increasing use and 
+applications of Internet. Day by day it is becoming very 
+difficult to retrieve the relevant information. Various 
+approaches have been used by the researchers to get 
+over the relevancy factor in information retrieval. 
+An information retrieval model is a quadruple consistin
+g of document collection, set of queries, framework 
+model and a ranking function associated with query-document. A framework model may be boolean, vector 
+space or probabilistic. Boolean model matches query with
+ precise semantics in the document collection by 
+boolean operations with operators AND, OR, NOT. It predicts either relevancy or non-relevancy of each 
+document, leading to the disadvantage of retrieving very few or very large documents. The boolean model is the 
+lightest model having inability of partial matching which lead
+s to poor performance in retrieval of information. 
+Vector space model is introduced by G. Salton in late 19
+60s in which partial matchi
+ng is possible. Non-binary 
+weights are used to weight the index terms in queries and in documents. These words are used for calculating 
+
+degree of similarity between each docu
+ment and the query. The ranked docume
+nt set in the decreasing order of 
+degree of similarity thus obtained is precise than the result of boolean model. Index term weights can be 
+calculated in many different ways. The work by Salton and McGill [1] reviews various term-weighting 
+techniques. Although there is contention as to whether 
+probabilistic model outperforms the vector model, Salton 
+ and Buckley [2] showed that the vector model is expected to outperform the probabilistic model with general 
+collections [3]. This paper implements and discusses the issues of info
+rmation retrieval system with vector space model using 
+MATLAB on Cranfield data collection of aerodynamics domain.  
+The next section deals with brief review of related 
+work of vector space model in information retrieval. 
+2. Related work 
+Maron and Kuhns [4] in early 1960, described probabilistic indexing technique in a mechanized library system 
+
+yielding probable relevance. Afterword in 1983, Salton and McGill wrote a book [1] which discusses thoroughly 
+the three classic models in information retrieval namely, the boolean, the vector, and the probabilistic models. 
+The book by van Rijsbergen [5] covers the discussion on
+ three classic models and ma
+jority of the associated 
+technology of retrieval system. Frakes and Baeza-Yates [6] edited the book on information retrieval which 
+mainly deals with the data structures used in general in
+formation retrieval systems. Also, it includes the issue of 
+relevance feedback as well as some query modification techniques [7] and Boolean operations and their 
+implementations [8]. Verhoeff, Goffman, and Belzer [9] described the shortfall of boolean queries for 
+information retrieval. The concept of using boolean formalism in other frameworks had been the great interest 
+area of the researchers. Lee et al proposed a thesau
+rus-based boolean retrieval system for ranking [10]. 
+
+Vector space model has been the most popular model in
+ information retrieval among the research vicinity 
+because of the research outcome in indexing, term va
+lue specification in automatic
+ indexing carried out by 
+Salton and his associates [11, 12]. Most of this research deals with experiments in automatic document 
+
+processing and different term weighting approaches for automatic retrieval [2, 13]. In 1972, Karen Sparck Jones 
+introduced the concept of inverse doc
+ument frequency, a measure of specifi
+city [14, 15] and Salton and Yang 
+uses it for automatic indexing to improve retrieval [12]. Raghavan and Wong [16] analyses vector space model 
+critically with the conclusion that the vector space model is useful an
+d which provides a formal framework for 
+the information retrieval systems.   
+
+The next section gives a description of
+ the most influential vector space m
+odel in modern information retrieval 
+research.  
+3. Vector Space Model The drawback of binary weight assi
+gnments in boolean model is remediat
+ed in the vector space model which 
+projects a framework in which partial matching is possible [11, 13]. Non-binary weights for index terms in 
+queries and documents are used in the calculation of degree of similarity. Decreasing order of this degree of 
+similarity for the retrieved documents gives the ranked documents with partial match. 
+For the vector model, the weight
+ 
+ associated with a pair
+  is positive and non-binary. Further, the 
+index terms in the query are also weighted. Let
+ 
+ be the weight associated with the pair
+, where
+ 
+
+. Then, the query vector
+ 
+ is defined as
+ 
+
+  where
+ t is the total number of index 
+terms in the system. The vector for a document
+ dj  is represented by
+ 
+
+
+.   The vector model proposes to evaluate th
+e degree of similarity of the document 
+dj with regard to the query 
+q as the correlation between the vectors 
+ and 
+. This correlation can be measured by the cosine of the angle
+ between these two vectors as,  
+                                                
+
+                                                                                  
+
+
+
+
+
+
+  where 
+and 
+ are the norms of the document 
+and query vector
+s. The factor 
+
+ does not affect the ranking 
+(i.e., the ordering of the documents) because 
+it is the same for all documents. The factor 
+ provides 
+normalization in the space of the documents.  
+Since 
+ and  
+, 
+ varies from 0 to +1, the vector m
+odel ranks the documents according to 
+their 
+degree of similarity 
+to the query. A document might be retrieved even if it matches the query only 
+partially.
+ [3, page 27-28]. 
+   In the vector space model, the frequency of a term 
+ki inside a document 
+dj referred to 
+as the 
+tf factor and 
+provides one measure of how well that term describes the document contents. Furthermore, the inverse of the 
+frequency of a term 
+ki among the documents in the collection referred to as the 
+inverse document frequency 
+or the 
+idf  
+factor.   The normalized frequency
+ fi,j of term
+ ki in document
+ dj is given by 
+ 
+      
+(1)
+ where the maximum is computed over all terms which are mentioned in the text of the document
+ dj. The  idfi, inverse document frequency for
+ ki, be given by 
+ 
+     
+(2) 
+The best known term-weighting schemes use weights which are given by 
+ 
+
+
+    (3) 
+ Such term-weighting strategies are called
+ tf-idf 
+schemes [3, page 29-30].
+  The success of vector space model lies in
+ its term-weighting scheme, its partia
+l matching strategy and similarity 
+measure. Mutual independence of index terms has said to be disadvantage of vector space model but practically, 
+consideration of term dependencies is not fruitful. From 
+the research consequence in the field, it seems that the 
+vector model is either superior or almo
+st as good as the 
+known alternatives. 
+4. Experimental Evaluations 
+4.1.
+  Dataset for information retrieval system 
+We used a Cranfield collection having 1398 abstracts related to aerodynamics domain which is obtained from 
+[17]. The collection contains a compressed version of document text, relation giving relevance judgements, text 
+of 225 queries, indexed documents and indexed queries. Also, we used stop-list obtained from the collection 
+source. 4.2.
+  Preprocessing 
+The compressed version of document text has been preprocessed to obtain a set of 1398 individual abstract files. 
+A PHP script has been written for this purpose. Stemming ha
+s not applied for the reasons of i) losing context of 
+search, ii) may reduces precision and iii) can not be applied 
+to proper nouns. To have a 
+clear view of relevancy, 
+instead of using given set of query and relevance judgement
+s, we have created our set of queries from titles of 
+1398 documents, forming a query set of 1398 entities.  
+4.3.
+ Implementation 
+A MATLAB is used to implement a vector space model 
+for information retrieval; 
+the complete process is 
+depicted in fig. 1. 
+   
+   
+   
+  Fig. 1. Implementation of vector space model for information retrieval. 
+   As shown in block diagram it consists of three stages:  
+1. Generation of Term-Frequency matrix 
+It is term-frequency matrix of all unique terms in document 
+ with 
+
+. The term document 
+matrix (FM) is 
+
+ matrix with 
+ unique terms in dictionary             
+
+ and 
+ documents. The elements of FM are represented as  
+
+ in which each element indicates the frequency 
+of 
+ term in 
+ document.  
+The Cranfield data collectiont is preprocessed to convert into individual 1398 text files. A SMART 
+stop word text file which is available with the dataset is used for the removal of stop words from the 
+data collection of 1398 files. Also, non-embedding special characters and numerals have been removed 
+from these files. 79,728 words ha
+ve been collected which are then 
+processed to find the frequency of 
+unique words in each documents. The dictionary of 
+unique words is of 7805 
+words. Thus the term-
+frequency matrix is of size 7805x1398. 
+
+ 2. Generation of Query matrix 
+The title of each abstract, after removing stop-list 
+words and non-embedding special characters is used 
+as query, which contributes to the set of 1398 unique queries represented as 
+. Here, we have taken 
+queries as titles of the document instead of the dataset queries so as to judge the relevancy more 
+profoundly. The generated matrix for 1398 queries is 
+
+  3. Term-weight calculations and result 
+A term-frequency matrix is processed to get the term weights considering 
+tf-idf
+ scheme. These term 
+weights are calculated by the formula
+
+, where 
+ 
+  is the term-weight i.e. weight of term 
+ in document 
+, 
+  is the frequency of term 
+ in document 
+,   is the inverse document frequency representing the terms appearing in many 
+documents and is calculated by the formula 
+, where  is the total number of 
+documents and 
+ is the number of documents containing term 
+,   is the Euclidean length obtaining by taking square root of sum of squares of 
+individual terms per document. 
+ Query matrix of size 
+
+is also divided by their corresponding
+ Euclidean 
+lengths to obtain the 
+normalized weights. For query
+ , the transpose of query matrix is 
+multiplied by the term-weight matrix. 
+The final result is obtained by ordering the weights in a result matrix in decreasing manner of their weights.
+ 4.4.
+  Testing phase 
+The vector space model (VSM) implemented above is tested thoroughly in different ways, the details of 
+experimentation is explained below: 
+
+Fig. 2 shows the distribution of index terms in dictionary for individual documents. The dictionary consists 
+
+of 7805 unique terms. 
+ Fig. 2. Index terms in a dictionary 
+Fig. 3 shows frequency count of each unique term in dic
+tionary distributed in complete dataset. Some of the 
+unique terms such as (flow, 2059), (pressure, 1245), (boundary, 1076), (results, 897), with high 
+
+frequency in entire documents is shown. 
+  Fig. 3. Frequency count of each 
+unique term among data collection 
+ Further looking into the dataset, as shown in fig. 4, shows subset of 380 documents out of 1398 abstracts. In 
+
+document 329 the total terms are 342 but the unique terms are only 162. 
+   
+ 
+ 
+ 
+     Fig. 4. Document-wise total and unique terms 
+ Table I is the subset of 20 queries out of 1398 tested queries against the vector 
+space model for retrieval of 
+relevant documents. In the present study the most relevant document is one whose ID matches with query 
+
+ID.   
+
+Table I is the subset of 20 queries out of 1398 tested queries against the vector 
+space model for retrieval of 
+
+relevant documents. In the present study the most relevant document is one whose ID matches with query 
+
+ID.   
+ Table 1. Subset of 20 queries 
+ Q.ID 
+Details of  Queries 
+1  experimental investigation of the aer
+odynamics of a wing in a slipstream .  
+2  simple shear flow past a flat plate in an incompressible fluid of small viscosity .  
+3  the boundary layer in simple sh
+ear flow past a flat plate .  
+4  approximate solutions of the incompressible laminar 
+boundary layer equations for a plate in shear flow .  
+5  one-dimensional transient heat conduction in
+to a double-layer slab subjected to a lin
+ear heat input for a 
+small time interna
+l . 6  one-dimensional transient heat flow in a multilayer slab .  
+7  the effect of controlled three-
+dimensional roughness on boundary layer transition at supersonic speeds .  
+8  measurements of the effect of two-dimensional and thr
+ee-dimensional roughness elements on boundary layer transition .  
+9  transition studies and skin friction measurements on an
+ insulated flat plate at a mach number of 5.8 .  
+10  the theory of the impact
+ tube at low pressure .  
+11  similar solutions in compressi
+ble laminar free mixing problems .  
+12  some structural and aerelastic considerations of high speed flight .  
+13  similarity laws for stressing heated wings .  
+14  piston theory - a new aerodyna
+mic tool for the aeroelastician .  
+15  on two-dimensional panel flutter .  
+16  transformation of the compressible turbulent boundary layer .  
+17  remarks on the eddy viscosity in compressible mixing flows .  
+18  the flow field in the diffuser of a radial compressor .  
+19  an investigation of the pressure distribu
+tion on conical bodies in hypersonic flows .  
+20  generalised-newtonian theory .  
+   The result of experimentation is tabulated in Table 2 shown below: 
+ 
+   
+    Table 2. Tabulation of results of first ten queries 
+    Further query wise details are depicted in subsequent Table 3 to Table 5 respectively. 
+ Table 3. Frequency of terms in 
+retrieved document set for query 1 
+ Table 4. Frequency of terms in 
+retrieved document set for query 2 
+  Table 5. Frequency of terms in 
+retrieved document set for query 3 
+    Table 3 depicts the result obtained for query 1 with query terms and their occurrences in the documents. First 18 
+documents are listed. Similar results are shown in ta
+ble 4 and table 5 for queries 2 and 3 respectively. 
+5. Results and discussion 
+Even after taking the titles of the abstract documents as a query set, the final result of retrieval is 89.41%. 148 
+
+queries have not shown result as first retrieved document; however, within the range of first two retrieved 
+documents, the result obtained is 94.99%. 2.22% of queries have not retrieved the correct result up to the range 
+of first five documents.  
+
+Inter-document characterization and document frequency plays vital role in building ranks of the documents in 
+vector space model. As such, te
+rm frequency of the documents d
+3, d389 and d
+2 is 24, 42 and 110 respectively; and 
+the frequency of terms 
+flow
+, plate
+ and 
+small
+ in all documents is 2059, 421 and 306 respectively, which is 
+much more higher than the average frequency- as 
+a result, table IV shows the outcome of query q
+2 as document 
+d3; however, expected relevant document is d
+2. Variety of the weight calculation formulas as suggested by 
+Salton and Buckley [2] have been tested on this collection but we found that the standard 
+tf-idf
+ weighting 
+scheme gives the best results. 
+References 
+[1] G. Salton and M. J. McGill. 
+Introduction to Modern Information Retrieval.
+ McGraw-Hill Book Co., New York, 1983. 
+[2] G. Salton and C. Buckley. 
+Term-weighting approaches in automatic retrieval.
+ Information Processing and Management, 
+24(5):513-523, 1988. 
+[3] Christopher D. Manning, Prabhakar Raghavan, and Hi
+nrich Schutze, 
+Introduction to Information Retrieval,
+ Cambridge 
+University Press, New York, USA, 2008. 
+[4] M. E. Maron and J. L. Kuhns. 
+On relevance, probabilistic indexing and information retrieval
+. Association for Computing 
+Machinery, 7(3):216-244, 1960. 
+[5] C. J. van Rijsbergen. 
+Information Retrieval. Butterworths, London, 1979. 
+[6] W. B. Frakes and R. Baeza-Yates. 
+Information Retrieval: Data Structures and Algorithms
+. Prentice Hall, Englewood Cliffs, NJ, 
+USA, 1992. 
+[7] D. Harman. 
+Relevance feedback and other query modification techniques
+. In W. B. Frakes and R. Baeza-Yates, editors, 
+Information Retrieval: Data Structures
+ and Algorithms, pages 241-263. Prentice 
+Hall, Englewood Cliffs, NJ, USA, 1992.  
+[8] S. Wartick. Boolean operations. In W. 
+B. Frakes and R. Baeza-Yates, editors
+, Information Retrieval: Data Structures and 
+Algorithms
+, pages 264-292. Prentice Hall, Englewood Cliffs, NJ, USA, 1992.  
+[9] J. Verhoeff, W. Goffmann, and Jack Belzer. 
+Inefficiency of the use of Boolean func
+tions for information retrieval systems
+. Communications of the ACM, 4(12):557-558, 594, December 1961. 
+[10] J. H. Lee, W. Y. Kim, and Y. H. Lee. 
+Ranking documents in thesaurus-
+based Boolean retrieval systems
+. Information Processing 
+and Management, 30(1):79-91, 1993. 
+[11] G. Salton and M. E. Lesk. 
+Computer evaluation of indexing and text processing.
+ Journal of the ACM, 15(1):8-36, January 1968. 
+[12] Gerad Salton and C. S. Yang. 
+On the specification of term values in automatic indexing
+. Journal of Documentation, 29:351-372, 
+1973. 
+[13] G. Salton. The 
+SMART Retrieval System  Experiment
+s in Automatic Document Processing
+. Prentice Hall Inc., Englewood 
+Cliffs, NJ, 1971. 
+[14] K. Sparck Jones. A statistical interpretation of term sp
+ecificity and its application to retrieval
+. Journal of Documentation, 
+28(1):11-20, 1972. 
+[15] K. Sparck Jones. A statistical interpretation of term sp
+ecificity and its application to retrieval
+. Information Storage and Retrieval, 
+9(11):619-633, 1973. 
+[16] V. V. Raghavan and S. K. M. Wong. A 
+critical analysis of vector space model for information retrieval
+. Journal of the American 
+Society for Information Sciences, 37(5):279-287, 1986. 
+[17] ftp server of Co
+rnell University ftp://ftp.cs.cornell.edu/pub/smart/cran/
+ for Cranfield collection. 

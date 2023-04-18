@@ -1,0 +1,568 @@
+Keywords: Social networking sites (SNS); Social media; Academics;
+Health; Awareness; Privacy; Security policies
+Introduction
+In this era of technology, Internet plays a dynamic role in 
+almost every eld of life. rough internet, users can communicate 
+with each other using dierent platforms. Students use this facility 
+
+for communication, preparing dierent projects, assignment and 
+
+presentations. ere are dierent platforms for dierent purposes. 
+
+For formal communication users usually use Gmail, Yahoo mail or 
+
+Hotmail. For casual talks or sharing dierent kind of stu users prefer 
+
+Facebook, twitter or Instagram. For contacting someone urgently users 
+
+avail the facility of WhatsApp. For online streaming users use YouTube. 
+
+And for online games, users go to miniclip or blizzard entertainment.
+Social media is a concept based on a platform for the people around 
+the world to discuss their issues and opinions and exchange information. 
+
+And social networking sites (SNS) are basically those tools that allows 
+
+the people to exchange information, ideas, images, videos and much 
+
+more through a specic network. Few examples of SNS are Facebook, 
+
+Twitter, YouTube, Blizzard Entertainment, WhatsApp etc. SNS provide 
+
+its users a facility to create their own prole with their own list of users. 
+
+With this list of users, the person can connect at that specic platform 
+
+and that platform oers dierent features like chatting, blogging, audio 
+
+and video calling, mobile connectivity and video and photo sharing.
+Facebook provides its users to make their own prole. Besides this, 
+the users can create a page or group, which can be used for marketing 
+
+purpose or educational purpose etc. Facebook also provides dierent 
+
+facilities like; blocking, following, posting, commenting, liking, 
+
+sharing, messaging and audio/video calls. Using twitter, a user can 
+
+make an account and then can avail the facility of tweeting, retweeting, 
+
+messaging and adding other users as followers.
+Instagram users post pictures to let their followers know what is 
+happening around them. e followers can like comment and share 
+
+the posts. You Tube is a platform where users make channels and then 
+
+upload videos. e viewers watch the videos and can report, dislike, 
+
+like, comment and share the video on other social platforms. e 
+
+users can search any video by its name as well. Gamers who use online 
+
+gaming platforms avail the facility of multiplayers gaming mode and 
+
+besides that they can chat with each other. In this paper we will review 
+
+the past literature available to understand the role of social media in 
+
+students life and then we will nd out the positive and negative impacts 
+
+of social networking platforms on students physical and psychological 
+
+health and also how it aects the students academics in Pakistan.
+Literature Review
+According to OKeee GS and Clarke-Pearson K [1], social media 
+impacted more in negative side. It includes accessing inappropriate 
+
+contents without understanding the privacy policies. ey also said that 
+
+aer the introduction of social media, there is more online harassment 
+
+and cyberbullying.
+Ahn J [2] while doing research presented a theory known as 
+Signaling eory. According to her theory, an individual while trying 
+
+to make himself/herself popular adds so many unknown users as his/
+
+her friend, and this is how an individual compromises their own trust 
+
+and privacy.
+Rideout V [3] said that the youth is spending more time on social 
+media just for entertainment purpose. She told that an American child 
+
+on average spends 7-8 hours a day, just for entertainment and usually 
+
+multi-task between dierent social networks they use.
+Pardo A [4] has made an eort to explain social medias importance 
+in students life. He said that such platforms allow students to 
+
+communicate with each other for sharing information and teachers as 
+
+well. Pardo states that such kind of interactions are necessary for people 
+
+to learn new things.
+Cain J and Chretien K [5] introduced a new term interprofessional 
+education. It is dened as when dierent individuals come together 
+
+on a single platform to share knowledge which leads to improved and 
+
+better understanding as they are learning from each others experiences.
+El-Badawy TA and Hashem Y [6] in their research concluded that 
+social media has no relationship with students academic performance. 
+
+And there is no impact (positive or negative) on students academic 
+
+routine.
+According to Tariq W and Mehboob M [7], social media is ruining 
+the future and carrier of students. It distracts students from their 
+Hassan Khalid*Department of Computer Science, Abdul Wali Khan University, Mardan, Pakistan
+AbstractIn the present world of technology, Internet plays a vital role in students life. Students use the internet facility 
+for dierent purposes i.e., communication, preparation, acquiring knowledge, entertainment etc. In this research, 
+our task is to nd the impact of social networks on students physical and psychological health. We also nd that 
+
+how social networks impact the academics of students. Lastly, we discuss how youngsters got compromised by their 
+
+personal and private data. In the end, we gured out that the excessive use of social networks eect the students 
+
+physical and psychological health negatively. Social Networking Platforms have a positive impact on their academics. 
+
+A number of students have been harassed and their personal data has been misused due to lack of knowledge about 
+
+security and privacy policies. erefore, we suggested that social media should be taught as a subject or at a workshop/
+
+seminar for the awareness of cybercrimes and the policies (security and privacy both).
+*Corresponding author:
+ Hassan Khalid, Department of Computer Science,
+
+Abdul Wali Khan University, Mardan, Pakistan, Tel: +923355823363; E-mail:
+
+malikhasankhalid@gmail.comReceived June 14, 2017
+; Accepted August 01, 2017
+; Published August 07, 2017Citation: Khalid H (2017) 
+The Effects of Social Networks on Pakistani Students. 
+J Inform Tech Softw Eng 7: 203. doi: 10.4172/2165-7866.1000203
+
+Copyright:  2017 
+Khalid H. 
+This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted 
+use, distribution, and reproduction in any medium, provided the original author and 
+
+source are credited.Journal ofInformation Technology & Software EngineeringJournal of Information Technology &Software EngineeringISSN: 2165-7866Page 2 of 6studies. Further on, they analyzed the data collected from a survey that 
+there is a very large number users using social media with multiple IDs 
+
+(real and fake one). Lastly they said that in Pakistan there are no such 
+
+laws for social networking sites to be followed. 
+Kalia G [8] in her research paper concluded that the students should 
+be engaged on a social platform with each other to learn better and 
+
+more. Teachers should help kids to understand what social media is? 
+and its fair use. Finally she said that social media is an entertainment 
+world but it can also be used for educative and professional purposes.
+Shahjahan ATM and Chisty KU [9] came to the conclusion that 
+the overall eect of social media on teenagers is negative. Because of 
+addiction to social platforms, students usually get low grades. Parents 
+are not aware of their childrens social accounts and their policies, which 
+
+aect them later on. e teenager lack condence and try to avoid face-
+to-face communications.
+Siddiqui S and Singh T [10] discussed both the positive and negative 
+aspects of social media. Students can make a group of their class on any 
+
+social platform where they can discuss and express themselves. ey 
+can share useful information by using that specic platform. ey can 
+explore the opportunities for their future. But it also distract students 
+
+from their academics. Teenagers are not completely aware of the terms 
+
+and policies and that social platform. And they misuse it by creating 
+
+fake accounts for fun purposes and later on get addicted to it.
+Khurana N [11] discovered that in India 66% of the youth uses 
+social platforms for at least 2 hours a day. He also discovered that a 
+
+very large number of youngsters have been victimized by cyber-
+
+crimes. And nally he concluded that it all happens just because of not 
+
+understanding the terms and conditions properly.
+Zeitel-Bank N [12] in her paper summarized that social platforms 
+provide us the opportunity to share a local news and make it a global 
+
+one. But if one business rm spread a fake news about his rival, it hardly 
+
+take minutes to damage the companys reputation and shares. And same 
+
+is the scene in politics, one viral video can have a huge impact on you 
+
+individually and distributed as well.
+Mingle J and Adams M [13] came to the conclusion that besides the 
+positive impact of social media on students academics, it is dangerous 
+in many ways. It distracts students from their studies and students get 
+addicted to social networks unconsciously because of its extremely 
+user- friendly interface. And it later on aects the grades of students.
+Wang Q, et al. [14] conducted a survey in which they found out that 
+Facebook is the most popular social platform. Students spent vast hours 
+
+checking social media posts. Students use social platforms during their 
+classes, using their cell phones. 90% of the students use social networks 
+for entertainment purposes only. It aects the eciencies and their 
+
+grades as well. Social platforms distract students from their academics 
+because of its attractive and user-friendly interface.
+Abdulahi A, et al. [15] did a research on the negative eects of social 
+networking platforms. ey found out that students also use social 
+platforms on their cell phones during the lectures. e fact that students 
+miss their lectures leads them to low grades in academics. Slowly, social 
+networking sites also lead them to get addicted to it, and then users 
+use it day and night. is aects the students health. In hope of getting 
+more friends, users usually share their own personal data, which later 
+on can be misused and they compromise their privacy and security.
+Li Y [16] in his research concluded that social networking platform 
+itself is a mass-oriented, social and value-neutral. eir value depends 
+upon the users application. ere is much messy, mixed, false and 
+untrue information on social platforms, which cannot fully meet the 
+demands of students in China. It also adds risks for students with 
+
+regards to their privacy and security.
+Chanchalor S, et al. [17] had done a detailed quantitative research 
+regarding the eects of online gaming on the health eects of online 
+gamers. e symptom of drowsiness and dizziness was the rst 
+
+disorder, then insomnia, annoyance, pain in the occipital bone or back. 
+e least symptom was avoidance of their social contacts. ey also 
+concluded that students who played violent games decreased on EQ, 
+sympathy, responsibility, decision making and good relationship. And 
+those students who play less violent games has no positive eect on EQ.
+Fu-Yun Y and Yu-Hsin L [18] worked on using social media 
+(Facebook) as a teaching and learning tool for in-class Q&A activities.
+ey performed a survey and aer data analysis, four features were 
+identied: enhanced social interaction, more focused learning, more 
+amiable classroom environment and deepened thinking about the 
+awareness of the complexity of the study topic
+Leelathakul N and Chaioah K [19] studied the eects of using 
+Facebook as an educational tool for students to acquire knowledge. 
+ey explored the correlation between dierent Facebook activities 
+and students performances in classes. ey concluded that Facebook is 
+
+good for students as a learning tool and they also said that an individual 
+activity aspect is not linearly correlated with students result.
+ De Silva E and De Silva EC [20] in their research discussed the 
+importance of multidisciplinary approach in online classrooms, and 
+to create a learner-centered environment for the students for their 
+clear focus on what they are going to learn, why they are learning 
+and what competencies are expected. ey also concluded that with 
+
+multidisciplinary approach student will be able to identify pragmatic 
+solutions to common problems through interaction, interconnection 
+and integration with other elds.
+Purpose of the Study
+e purpose of the study is to understand the dierence between 
+social media and social networking sites. en we will discuss 
+its impact on students academics, physical health, psychological 
+
+health and security and privacy issues. Finally we will present our 
+
+recommendations aer discussing the results and conclusions.
+Results and Discussion 
+We have arranged a survey, in which we asked the respondents 
+dierent questions regarding social networking sites and its upshots. 
+
+Our targeted audience was mostly students aged between 16-26. Our 
+
+total responses were 100.
+Aer getting the data from survey, we statistically analyzed all the 
+questions with respect to their variance, standard deviation, mean, 
+
+standard error and satisfaction rate.
+Lastly, we took the average of all the values for referencing in our 
+paper. e values are given below:
+Variance: 6.18
+Standard deviation= : 1.50
+Mean=  
+ or : 3.06
+Standard error: 0.15
+
+Satisfaction rate: 56.38
+Page 3 of 6Popular social platform
+When we ask the students that which platforms they use? ey told 
+us that, in the present world of technology everyone uses some kind 
+of social network for some purpose. Few of us use social networks for 
+
+acquiring knowledge, some people use for making new friends around 
+the globe, few of us use to make themselves updated regarding the events 
+occurred in the classes like assignment or presentations etc. Some of 
+
+the students use social platforms for entertainment purpose. 33% of 
+the students use Facebook, 23% use WhatsApp, 21% use YouTube, 12% 
+Instagram, 9% Twitter and 2% other social platforms i.e., snapchat and 
+Imo (Figure 1).
+Purpose of using social networks
+Students use social networks for many reasons, like online gaming, 
+chatting with their friends, watching movies/videos, making new 
+friends, learning something new, doing assignment etc. According to 
+our survey, 40% of the student use the social networking platforms 
+
+for entertainment purposes, which further includes online gaming, 
+
+chatting, watching online videos etc. 35% use social networking 
+platforms for educative purposes. It includes watching online tutorials 
+regarding their courses, reading online material etc. 20% students use 
+social platforms to keep themselves updated regarding the current 
+
+activities in their classes. Like presentation updates, assignment and its 
+
+deadlines etc. Only 5% students are interested in making new friends 
+
+around the globe. e purpose of these students is to learn their culture 
+
+and if they have any scope in dierent countries for jobs or further 
+
+education (Figure 2). 
+Awareness about the terms and policies
+When the students were asked that are you aware of the terms and 
+policies of the network/platform you are using, 71% of the students 
+
+refused that they are not aware of the terms and policies of the social 
+
+networks they are using. 29% students agreed that they understand the 
+
+terms and policies of the social networking platforms they are using 
+
+(Figure 3).
+Impact of social networking platforms on academics
+73% of the responses quoted that social networking platforms play 
+a positive role in our academics. Social platforms have a positive impact 
+
+on our studies during the exams as well. Just 27% have the negative 
+
+opinion. ey think that social platforms usually distracts us from 
+ Figure 1: Popular social network. Figure 2: Purpose of using social networks.Figure 3: Awareness regarding the terms and policies of social platforms they 
+
+are using.our studies, especially during exams (Figure 4). 60% think that SNS 
+
+play a negative role, when we talk about the psychological health of 
+
+students. ey think that online gamers are the people who are aected 
+
+negatively by the extreme use of SNS. For other users, whenever any 
+
+platform becomes an addiction, it will aect their psychology in a 
+
+negative way (Figure 5).
+Impact of social networking platforms on physical health
+According to 70% of our respondents, SNS has a negative impact on 
+their physical health. ey think that once you get addicted to any social 
+platform, then it will aect your time and physical health negatively. 
+30% said that it has a positive impact on their physical health. ey 
+think that if we use social platforms in a balanced way, then it will not 
+
+aect your physical health negatively (Figure 6).
+How to spread awareness regarding social networks
+When the students were asked about the ways or techniques to 
+spread awareness regarding dierent aspects/ dimensions of Social 
+Media and Social Networking Platforms. 24% of the students thought 
+
+that it should be taught as a subject in schools or colleges. 33% suggested 
+
+that in a workshop, the students should taught dierent dimensions of 
+
+social media and also make them understand the security and privacy 
+
+policies. 43% advised that during a seminar at dierent schools, colleges 
+Page 4 of 6 Figure 4: Impact of social networking platforms on academics. Figure 5: Impact of social networking platforms on physical health. Figure 6: Impact of social networking platforms on psychological health.and universities, the positive and negative aspects of using SNS should 
+be discussed. By doing this, we can also spread awareness regarding 
+
+dierent issues related to social networks.
+Impact of social networking platforms on psychological 
+
+health
+According to 40% of our respondents, SNS have a positive impact 
+on students psychological health (Figure 7).
+Cybercrimes
+During the survey, we asked the students about the cybercrimes. 
+ey told us that we have heard people doing dierent illegal 
+activities, like misuse of someones personal data, using fake-ids and 
+
+impersonation. 22% agrees that they have seen fake-ids on dierent 
+
+social networks. 11% agreed that sometimes data has been misused for 
+dierent purposes as well as for illegal activities. Only 2% mentioned 
+
+the crime impersonation. 64% respondents told us that all the crimes 
+are present in todays world (Figure 8).
+Awareness to cybercrimes
+Regarding the above question about the cybercrimes, we asked the 
+students about any kind of exposure to any cybercrime. 89% answered 
+the question negatively. Just 11% responded positively (Figure 9). Aer 
+understanding the analyzed data from the survey, we understand the 
+purpose of the students to use SNS. Secondly, we also got to know 
+
+about the unawareness regarding dierent dimensions of using social 
+
+platforms. Lastly, we concluded that the new generation is indierent 
+
+to cybercrimes. Students who spend more time on social platforms are 
+trying to get more socialized and because of this, they get addicted to a 
+social platform, which slowly aects their health.
+Future Work
+In my opinion, the current research work lays down reasonably 
+ Figure 7: Way to spread awareness among students regarding social media.
+Figure 8: Common aspects of cybercrimes related to the students.Page 5 of 6good foundations for the futuristic research work particularly in the 
+dimensions as shown in the gure given below (Figure 10).
+Conclusion
+In the end we will discuss the concluded facts, which we discovered 
+from reviewing the past literature and by doing the survey through 
+a questionnaire. At the end we will give certain suggestions to be 
+followed to make the students health and life safer. First thing we 
+
+discovered was that in Pakistan, every student is using some kind 
+of platform for socializing as well as for academic and educational 
+purposes. Most of the students have accounts on Facebook and use 
+
+YouTube for dierent purposes. If the students use these platforms 
+in a balanced way, it will not harm their health. Secondly, we found 
+out that there is a huge number of users who are unaware of the terms 
+
+and policies of the social networks they are using. Most of the time, 
+the users download the applications on their mobile phones and they 
+without reading the terms and conditions press OK/Allow button to 
+
+download their desired applications. Understanding the terms and 
+policies of any platform is very much important. It can aect someones 
+security and privacy negatively. irdly, we came to the conclusion that 
+
+social networks plays a positive role in students academic activities. 
+Especially using Facebook, classmates make a group and share the 
+lectures, presentations, assignments on that group. During exams, 
+
+they share important questions etc. it helps the whole class to know 
+
+and to understand the issues or problems in detail. e next thing we 
+
+discovered was that using social platforms for entertainment purposes 
+
+has a negative impact on students physical health. ose users who 
+
+plays online games and those who are addict to any social platform 
+
+become physically sick. Dierent kinds of symptoms have been 
+
+observed like dizziness, drowsiness, insomnia, annoyance and pain in 
+
+the occipital bone of back. In some cases, they become so unsocial in 
+
+their real lives that they ignore meeting face to face with their friends 
+
+and family. We also got to know that excessive use of social platforms or 
+
+playing online games for a longer duration also aect your psychological 
+health negatively. We found out that students who spent more than ve 
+hours surng on dierent social platforms and playing online games 
+
+are aected by psychological health issues like stress, mood disorder, 
+
+anxiety disorder etc. We gured out that there is a large number of social 
+networks users who are actually not aware of the terms and policies of 
+the platform, they are using. It can further lead them being victimized 
+by cyber experts, as well as they also face problems with their personal 
+
+data being misused in dierent ways. We concluded that this generation 
+
+is a quite indierent to cybercrimes. ey are not interested in what 
+
+kind of crimes are going on around them. eir posts contain violent 
+
+material and they feel happy when other users react to their posts. 
+
+Everyone is aware of dierent kinds of cybercrimes like fake Ids, fake 
+
+news, libel, misuse of personal stu and impersonation. But most of the 
+
+time students do not take such things seriously. Lastly, we discovered 
+
+that Social Media is as deep as an ocean. erefore it should be taught 
+
+properly whether as a subject or through seminars or workshops. It is 
+
+imperative to spread awareness regarding dierent dimensions of social 
+
+media. Some of them are given below:
+Pros and cons of using social platforms. 
+Proper and legal use of social networks.
+Understanding the terms and policies of dierent social 
+networks.
+How to keep your account secure and safe?
+ Recommendations After discussing the results and giving the conclusion, we recommend the 
+
+following things to be noted and acted upon to have a better and safer 
+
+future: Age limit: There should be age limit to the users of different social platforms.
+ Parental guidance and check: Parents should have a little check on their 
+
+kids as well as guide them, so that they use such platforms in a proper 
+
+manner to avoid the imbalance in their physical and psychological health. General awareness: The awareness should be spread around, to 
+understand the social networks properly.
+ Teaching social media: Social Media should be taught as a subject or during 
+
+a workshop or at a seminar.
+ Awareness regarding cybercrimes: students should learn how to secure 
+
+their accounts from different cyber-attacks and what to do if they get 
+victimized. Awareness regarding terms and policies: Students should also learn and 
+understand the terms and policies of all the social platforms they have been 
+signed up.References1. O'Keefe GS, Clarke-Pearson K (2011) The Impact of Social Media on Children, 
+Adolescents, and Families. Pediatrics 127: 800-804.2. Ahn J (2011) The Effect of Social Network Sites on Adolescents Social and 
+ Figure 9: Exposed to any dimension of cybercrimes.Figure 10: Prospects of future work.Page 6 of 6Academic Development: Current Theories and Controversies. J Am Soc Inf Sci 
+Technol 62: 1435-1445.
+3.Rideout V (2012) Social Media, Social Life: How Teens View Their Digital Lives. 
+Common Sense Media.4.Pardo A (2013) Social Learning Graphs: Combining Social Network Graphs
+and Analytics to Represent Learning Experiences. Int J Social Media and
+
+Interactive Learning Environments 1: 43-58.5.Cain J, Chretien K (2013) Exploring Social Media's Potential in Interprofessional 
+Education. Journal of Research in Interprofessional Practice and Education.6.El-Badawy TA, Hashem Y (2015) The Impact of Social Media on Academic
+Development of School Students. International Journal of Business
+
+Administration 6: 46-52.7.Tariq W, Mehboob M, Khan M, FaseeUllah (2012) The Impact of Social Media
+and Social Networks on Education and Students on Pakistan. International
+Journal of Computer Science Issues 9:  407-411.8. Kalia G (2013) A Research Paper on Social Media: An Innovative Educational
+Tool. Issues and Ideas in Education 1: 43-50.
+9. Shahjahan ATM, Chisty KU (2014) Social Media Research and its Effects on
+Our Society. International Journal of Social, Behavioral, Educational, Economic, 
+
+Business and Industrial Engineering 8: 2009-2013.10. Siddiqui SS, Singh T (2016) Social Media its Impact with Positive and Negative 
+Aspects. International Journal of Computer Applications Technology and
+
+Research 5: 71-75.11.
+ Khurana N (2015) The Impact of Social Networking Sites on the Youth. JMCL
+5: 1-4.12. Zeitel-Bank N, Tat U (2014) Social Media and its Effects on Individuals and
+Social Systems. Portoroz, Slovenia: Human Capital without Borders, pp: 1183-
+
+1190.
+13. Mingle J, Adams DM (2015) Social Media Network Participation and Academic 
+Performance in Senior High Schools in Ghana. Library Philosophy and Practice 
+
+(EJournal), pp: 1-51.14. Wang Q, Chen W, Liang Y (2011) The Effects of Social Media on College
+Students. 15. Abdulahi A, Samadi B, Gharleghi B (2014) A Study on the Negative Effects
+
+Scholars in Malaysia. Int J Bus Soc Sci 5: 133-145.16. Li Y (2011) Survey on Situation of Chinese College Students Choosing To Use 
+Social Networking. IEEE, Computer Research and Development (ICCRD),
+
+2011 3rd International Conference. pp: 344-348.
+17. Chanchalor S, Konsue S, Chanchalor O (2012) Health Effects of Playing
+Online Game: Vocational and Technical Students on Thailand. International
+
+Conference on Biomedical and Health Informatics, pp: 120-122.18. Yu FY, Liu YH (2015) Social Media as a Teaching and Learning Tool for In-
+Class Q&A Activities to Promote Learning and Transform College Engineering
+
+Classroom Dynamics: The Case of Facebook. International Conference on
+
+Advanced Learning Technologies.
+19. Leelathakul N, Chaipah K (2013) Quantitative Effects of using Facebook as
+a Learning Tool on Students' Performance. International Joint Conference on
+
+Computer Science and Software Engineering (JCSSE).20. DeSilva E, DeSilva EC (2014) Online Teaching: A Comparison of On-Ground,
+Online & Facebook-linked Teaching. International Conference on Interactive
+
+Mobile Communication Technologies and Learning (IMCL) 338-341.

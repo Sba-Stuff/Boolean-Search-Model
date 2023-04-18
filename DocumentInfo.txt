@@ -1,0 +1,179 @@
+1
+
+Document: 01232745
+
+Title: Improving requirements tracing via information retrieval
+Author: J.H. Hayes;A. Dekhtyar;J. Osborne
+2
+
+Document: 01263284
+
+Title: Predicting student performance: an application of data mining methods with an educational Web-based system
+Author: B. Minaei-Bidgoli;D.A. Kashy;G. Kortemeyer;W.F. Punch
+3
+
+Document: 05605630
+
+Title: Deep Machine Learning - A New Frontier in Artificial Intelligence Research [Research Frontier]
+Author: Itamar Arel;Derek C. Rose;Thomas P. Karnowski
+4
+
+Document: 342009.335438
+
+Title: 0010024a.tif
+Author: solaric
+5
+
+Document: 607E20180408
+
+Title: Query-oriented Text Summarization using Sentence Extraction Technique
+Author: Afsharizadeh M.
+6
+
+Document: 92-Article Text-178-1-10-20181226
+
+Title: IoTCP: A Novel Trusted Computing
+Author: Shuangbao (Paul) Wang
+7
+
+Document: A Data Mining Based Approach to a Firm's Marketing Channel
+
+Title: A Data Mining Based Approach to a Firm's Marketing Channel
+Author: Esra Kahya Ozyirmidokuz
+8
+
+Document: Advances and challenges in building engineering and data mining applications for energy-efficient communities
+
+Title: Advances and challenges in building engineering and data mining applications for energy-efficient communities
+Author: Zhun (Jerry) Yu
+9
+
+Document: An Efficient CRM-Data Mining Framework for the Prediction of Customer Behaviour
+
+Title: An Efficient CRM-Data Mining Framework for the Prediction of Customer Behaviour
+Author: T. Femina Bahari
+10
+
+Document: Analysis of Data Mining Techniques for Healthcare Decision Support System Using Liver Disorder Dataset
+
+Title: Analysis of Data Mining Techniques for Healthcare Decision Support System Using Liver Disorder Dataset
+Author: Tapas Ranjan Baitharu
+11
+
+Document: CCPE
+
+Title: Microsoft Word - Special%20Call%20Paper%20after%20Referees%20Comments%20with%20two%20concurrency%20refs.docx
+Author: Nik Bessis
+12
+
+Document: Classification and prediction based data mining algorithms to predict slow learners in education sector
+
+Title: Classification and Prediction Based Data Mining Algorithms to Predict Slow Learners in Education Sector
+Author: Parneet Kaur
+13
+
+Document: clustering_survey(Berkhin2002)
+
+Title: (2)
+Author: (pavel berkhin)
+14
+
+Document: Data Mining in Healthcare – A Review
+
+Title: Data Mining in Healthcare  A Review
+Author: Neesha Jothi
+15
+
+Document: Data Mining in Product Service Systems Design Literature Review and Research Questions
+
+Title: Data Mining in Product Service Systems Design: Literature Review and Research Questions
+Author: Alessandro Bertoni
+16
+
+Document: Data Mining Techniques Applied to a Manufacturing SME
+
+Title: Data Mining Techniques Applied to a Manufacturing SME
+Author: Michael S. Packianather
+17
+
+Document: Efficient Data Mining Method to Predict the Risk of Heart Diseases Through Frequent Itemsets
+
+Title: Efficient Data Mining Method to Predict the Risk of Heart Diseases Through Frequent Itemsets
+Author: Ilayaraja M.
+18
+
+Document: EJ1076582
+
+Title: Microsoft Word - Dwayne Engh-new-final
+Author: Administrator
+19
+
+Document: Fayad
+
+Title: From Data Mining to Knowledge Discovery in Databases
+Author: Usama Fayyad
+20
+
+Document: Idiopathic_Hypertrophic_Pachymeningitis_A_Report_o
+
+Author: CJNS
+21
+
+Document: ijcsit2015060623
+
+Title: Microsoft Word - 32. final (3)
+Author: Siddhu
+22
+
+Document: INDJCSE12-03-02-028
+
+Title: Microsoft Word - INDJCSE12-03-02-028-corrected docx.docx
+Author: Siva
+23
+
+Document: j.1365-2125.2003.01968.x
+
+Title: Application of data mining techniques in pharmacovigilance
+Author: P
+24
+
+Document: OBrienKudlacekaHoweEUJAPA2009-review
+
+Title: PERCEIVED COMPETENCE AND SOCIAL ACCEPTANCE IN YOUNG PEOPLE WITH AND WITHOUT DOWN SYNDROME
+Author: MJON
+25
+
+Document: reading a CS research paper
+
+Title: Reading a computer science research paper
+Author: Philip W.L. Fong
+26
+
+Document: the nucleus of multiprogramming system
+
+Title: The nucleus of a multiprogramming system
+Author: Per Brinch Hansen
+27
+
+Document: the structure of multiprogramming system  by dijkstra
+
+Title: The structure of the &ldquo;THE&rdquo;-multiprogramming system
+Author: Edsger W. Dijkstra
+28
+
+Document: the unix time sharing system
+
+Title: The UNIX time-sharing system
+Author: Dennis M. Ritchie, Ken Thompson
+29
+
+Document: the-effects-of-social-networks-on-pakistani-students-2165-7866-1000203
+
+Title: The Effects of Social Networks on Pakistani Students
+Author: Hassan Khalid
+30
+
+Document: W04-1013
+
+Title: Lin.PDF
+Author: Administrator

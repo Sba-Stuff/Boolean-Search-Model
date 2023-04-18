@@ -1,0 +1,30 @@
+1         01232745.txt
+2         01263284.txt
+3         05605630.txt
+4         342009.335438.txt
+5         607E20180408.txt
+6         92-Article Text-178-1-10-20181226.txt
+7         A Data Mining Based Approach to a Firm's Marketing Channel.txt
+8         Advances and challenges in building engineering and data mining applications for energy-efficient communities.txt
+9         An Efficient CRM-Data Mining Framework for the Prediction of Customer Behaviour.txt
+10         Analysis of Data Mining Techniques for Healthcare Decision Support System Using Liver Disorder Dataset.txt
+11         CCPE.txt
+12         Classification and prediction based data mining algorithms to predict slow learners in education sector.txt
+13         clustering_survey(Berkhin2002).txt
+14         Data Mining in Healthcare – A Review.txt
+15         Data Mining in Product Service Systems Design Literature Review and Research Questions.txt
+16         Data Mining Techniques Applied to a Manufacturing SME.txt
+17         Efficient Data Mining Method to Predict the Risk of Heart Diseases Through Frequent Itemsets.txt
+18         EJ1076582.txt
+19         Fayad.txt
+20         Idiopathic_Hypertrophic_Pachymeningitis_A_Report_o.txt
+21         ijcsit2015060623.txt
+22         INDJCSE12-03-02-028.txt
+23         j.1365-2125.2003.01968.x.txt
+24         OBrienKudlacekaHoweEUJAPA2009-review.txt
+25         reading a CS research paper.txt
+26         the nucleus of multiprogramming system.txt
+27         the structure of multiprogramming system  by dijkstra.txt
+28         the unix time sharing system.txt
+29         the-effects-of-social-networks-on-pakistani-students-2165-7866-1000203.txt
+30         W04-1013.txt

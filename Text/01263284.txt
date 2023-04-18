@@ -1,0 +1,498 @@
+Session T2A PREDICTING STUDENT PERFORMANCE: AN APPLICATION OF DATA MI"G METHODS WITH AN EDUCATIONAL WEB-BASED SYSTEM 
+Behrouz Minaei-Bidgoli 
+I, Deborah A. Kashy ', Gerd Kortemeyer', William 
+F. Punch Abstract - Newly developed web-based educational 
+technologies offer researchers unique 
+opportunifies to study how students learn and what approaches 
+to learning lead 
+to success. Web-based systems 
+routinely collect vas1 quantifies of data on 
+user patterns, and data mining methods can be 
+applied to these databases. This paper presents 
+on approach to classifying students in 
+order to predict theirfinal grade based on 
+features extracted from logged doto in an education web-based 
+system. We design. 
+implemenf, and evaluate a series of pattern classifiers and compare 
+their performance on an online 
+COWSE dnfaset. A combination of multiple classifiers leads 
+to a significant improvement in 
+classification performance. Furthermore, 
+by learning an 
+appropriate weighting of 
+the features used via a genetic algorithm (CA), we further improve prediction accuracy. The CA is 
+demonstrated to successfully improve 
+the accuracy of combined 
+classifier performance. 
+about IO to 12% when comparing fo non-CA classijier. This 
+methodmay be ofconsiderable usefulness in identifying students 
+at risk early. especially in 
+very large classes, 
+and allow the 
+instructor to provide appropriate advising 
+in a timely nmnner. Index Terms 
+- Data Mining, Classificorion, Prediction, 
+Combination ofMultiple Classifiers, Genetic 
+Algorithm INTRODUCTION Many leading educational institutions are 
+working to establish an 
+online teaching 
+and learning presence. Several 
+systems with 
+different capabilities and 
+approaches have been 
+developed to deliver online 
+education in an academic setting. In particular, 
+Michigan State University (MSU) has pioneered some of these systems to provide an infrastructure for online instruction. The research presented here was performed on a part of the latest online educational 
+system developed at MSU, the Learning Online Network 
+with Compuler-Assisted Personalized Approach 
+(LON-CAPA) Two large databases are being developed in LON- CAPA. The first contains educational resources 
+such as web pages, demonstrations, simulations, 
+and individualized problems designed for use 
+on homework assignments, quizzes, and examinations 
+[2]. As more instructors develop [I]. educational materials for 
+their courses to use 
+with the LON- CAPA system, the content of this database grows. The second database contains 
+information about student users of LON-CAPA. This database 
+stores a wide range of variables (to be described shortly) including 
+when, for how 
+long, and how many 
+times they 
+access each resource, the 
+number of 
+correct responses they give on assigned 
+problems, their pattern of correct and 
+incorrect responses, 
+and so on. Needless to say, with each 
+semester, and as more instructors adopt the LON-CAPA system, this database grows 
+rapidly. In this study we apply data mining 
+methods to the LON- CAPA databases with the goals of answering the following two research questions: I) Can we find classes of students? In other words, do there exist 
+groups of 
+students who use these online resources in a 
+similar way? If so, can we 
+identify that 
+class for any individual student? With 
+this information, 
+can we 
+help a student use 
+the resources better, based on the usage of the resource by other 
+students in their groups? Can we classify the problems that have 
+been used by students? If 
+so, can we show how different types of problems impact 
+students' achievement? Can we help instructors to 
+develop the homework more effectively and efficiently? Some research and experiments 
+have been done to 
+reply the second research question 
+[3]-[4]. In this paper, regarding 
+the first research question, 
+we hope to find similar patterns of use in 
+the data gathered from LON-CAPA, and eventually be able 
+to make predictions 
+as to the most-beneficial course of studies for each learner based on their present usage. 
+The system could then make suggestions 
+to the learner 
+as to how to best proceed. 
+2) DATASET, CLASS LABELS, FEATURES As test data we selected 
+the student and course data 
+of an introductory physics course 
+for scientists and engineers 
+(PHY183), which was held at 
+MSU in spring semester 2002. This course included 12 homework sets with a total 
+of I84 problems, all of which were 
+done online 
+using LON-CAPA. About 261 students were initially enrolled 
+in the course, 
+' Berhouz MinaebBigdali, Michigan State University, Department of Computer Science, Genetic Algorithms Research 
+and Applications Group (GARAGe), 
+minaeibi@cse.msu.edu * Deborah A. Kashy, Michigan State University, Deplment of Psychology, hashyd@msu.edu ' Gerd Konemeyer, Michigan State University, 
+Division of Science and Math Education, korte@lite.msu.edu ' William F. Punch, Michigan State Univerrity, Deparhlent of Computer Science and Engineering, Genetic Algorithms Research 
+and Applications Gmup (GARAGe), punch@cse.msu.edu 0-7803-7961-6/03/$17.00 0 2003 IEEE November 54,2003, Boulder, CO 33'd ASEEIIEEE Frontiers in Education Conference 
+T2A-13 Authorized licensed use limited to: QUAID E AZAM UNIVERSITY. Downloaded on November 30,2020 at 04:24:22 UTC from IEEE Xplore.  Restrictions apply. Session T2A however some of 
+the students dropped 
+the course after 
+doing a couple of homework sets, 
+so they do not have any final 
+grades After removing those students, there remained 
+221 valid sanples The final grade distribution 
+of the students 
+IS shown in FIGURE 1 FIGURE 1 GRAPH OF DISTRIBUTION OF GRADES IN COURSE PHYl83 Grade Dlstributlon I 0 15 30 12 5 g20 15 10 OD 10 23 IO 10 50 60 s Dr .td.nlr We can group the students regarding their 
+final grades in several ways, 3 of which are: 1. The 9 possible class labels can 
+be the same as 
+students grades, as shown in table I 2. We can group them into three 
+classes, high representing grades from 
+3.5 to 4.0, middle representing grades 
+from 2.5 to 3, and low representing grades less 
+than 2.5, as shown in table 2. We can also categorize students with 
+one of two class labels: Passed for grades above 
+2.0, and Failed for grades less 
+than or equal 
+to 2.0, as shown in table 3. 3. TABLE 1 SLECTING 9 CLASS LABELS KEGARDNC TO STUDENTS GRADES 
+ciarr Gmde Sludent 11 percentage 1 0.0 2 0.9% 2 0.5 
+0 0.0% 1 in in 4 4% TABLE 1 SLECTING 9 CLASS LABELS KEGARDNC TO STUDENTS GRADES 
+1 0.0 2 0.9% 7 ns n n no/. ciarr Gmde Sludent 11 percentage 1 in in 4 4% ~~ ... 4 1.5 28 12.4% 5 2.0 23 10.1% 6 2.5 43 18.9% 7 3.0 52 22.9% 8 3.5 41 18.0% 9 4.0 28 12.4% TABLE 2 SELECTNO 3 CLASS LABELS REGARDING TO STLIDENTSGRADES 
+Class Grade Student P Percentage High Grade >= 3.5 69 30.40% Middle 2.0 < Grade < 3.5 95 41.80% Low Grade <= 2.0 63 27.80% TABLE 3 SELECTHG 2 CLASS LABELS REGARDHG TO STUDENTS GRADES Class Gnide Student # Percentage Passed Grade > 2.0 I64 72.2% Failed Grade <= 2.0 63 27.80% We can 
+predict that the error 
+rate in the first class grouping should be 
+higher than 
+the others, because the 
+sample size 
+in the 9 classes differs considerably. 
+Extractable Features 
+An essential step in doing classification is selecting 
+the features used 
+for classification. 
+Below wc discuss the 
+features from LON-CAPA 
+that were used, how they can 
+be visualized (to help in selection) and why we 
+normalize the data before classification. The following 
+features are stored 
+by thc 
+LON-CAPA system : 1. 2. 3. 4. Total number 
+of correct 
+answers. (Succcss 
+ratc) Getting the problem right on the first 
+try, vs. those with 
+high number of tries. (Success at the 
+first try) Total number 
+of tries for 
+doing homework. (Number 
+of attempts before correct answer 
+is derived) Total time 
+that passed from the first attempt, until the correct solution 
+was demonstrated, regardless of the 
+time spent 
+logged in to the system. Also, 
+the time at 
+which the student got the problem correct 
+relative to the due date. Usually better 
+students get the homwork completed earlier. Total time spent on the problem regardless of whether they got the correct 
+answer or not. Total time 
+that passed from the 
+first attempt through subsequent 
+attempts until the last submission was demonstrated. Participating in the communication mechanisms, 
+vs. those working alone. LON-CAPA providcs online 
+interaction both with 
+other students and with 
+the instructor. Were these used? 
+7. Reading the supporting 
+material before attempting 
+homework vs. attempting the homework 
+first and then reading upon it. Submitting a lot of attempts in a short 
+amount of time without looking 
+up materiol in between, versus 
+those giving it one try, reading 
+up, submitting 
+another one, and so forth. 9. Giving up on 
+a problem versus students 
+who continued trying up to the deadline. 
+IO. Time of the first log on (beginning of assignment, middle d the week, last minute) correlated with 
+the number of tries or number of solved problems. 
+A student who gets 
+all correct answers will not 
+necessarily be in the successful group if 
+thcy took 
+an average of 5 tries per 
+problem, but it should be verified fromthis research. The present classification experiment focuses 
+on the first six features based on the PHY 183 Spring 2002 class data. 
+5. 6. 8. CLASSIFICATION Pattern recognition has a wide variety of applications in many different 
+fields, such that it is not possible to come up with a single classifier 
+that can give good results in all cases. The optimal classifier 
+in every case is highly dependent 
+on November 5-8.2003. Boulder. CO 0-7803-7961-6/03/$17.00 0 2003 IEEE 33d ASEEilEEE Frontiers in Education Conference TZA-14 Authorized licensed use limited to: QUAID E AZAM UNIVERSITY. Downloaded on November 30,2020 at 04:24:22 UTC from IEEE Xplore.  Restrictions apply. Session T2A the problem domain. 
+In practice, one might come across a case where no single classifier can 
+classify with an acceptable level of accuracy. 
+In such cases 
+it would be better 
+to pool the results of 
+different classifiers to 
+achieve the 
+optimal accuracy. 
+Every classifier operates well 
+on different aspects of the training or 
+test feature vector. As a result, 
+assuming appropriate 
+conditions, combining multiple 
+classifiers may improve classification performance 
+when compared with any single classifier. The scope of 
+this survey is restricted to comparing some 
+popular non-parametric pattern classifiers 
+and a 
+single parametric pattern 
+classifier according 
+to the error estimate. 
+Six different classifiers 
+using the LON-CAPA datasets are compared in this study. The classifiers used in 
+this study include Quadratic Bayesian classifier. 
+heorest neighbor (I-NN), k-nearest neighbor (k-NN), Parzen-window, multi- layer perceptron (MLP), and Decision Tree. These classifiers are 
+some of the common 
+classifiers used in most practical classification problems. 
+After some preprocessing operations were made on the dataset, the 
+error rate 
+of each classifier is reported. finally, to improve performance, a 
+combination of 
+classifiers is presented. Normalization Having assumed in Bayesian and 
+Parzen-window classifiers 
+that the features are normally distributed, 
+it is necessary that the data 
+for each 
+feature be normalized. This ensures that each feature has 
+the same weight in the decision process. 
+Assuming that the 
+given data is Gaussian distributed, this 
+normalization is performed using 
+the mean 
+and standard 
+deviation of the training data. In order to normalize the training data, it is necessary first to calculate 
+the sample 
+mean p , and the 
+standard deviation 0 of each feature, or 
+column, in this dataset, 
+and then normalize the data using the equation( I). *, = zL2L (1 ) (r This ensures 
+that each 
+feature of the training dataset has 
+a normal distribution with a mean of zero 
+and a standard deviation of 
+one. In addition, the 
+kNN method requires 
+normalization of 
+all features nto the same 
+range. However, 
+we should 
+be cautious in using the 
+normalization before considering its effect on classifiers performances. 
+Combination of Multiple Classifiers (CMC) By combining multiple classifiers 
+we hope to improve 
+classifier performance. 
+There are differcnt ways one can think of combining classifiers: 
+The simplest 
+way is to find the overall error rate of the classifiers and choose 
+the one which has the least 
+error rate on the given dataset. This 
+is called an 
+ofjim CMC. This may not really 
+scem to be a CMC; however, in * The first five clarsitiers are coded in MATLABT6.0, and lbrthe decision me classifiers we have used some available sonware packages such as C5.0, CART, QUEST, and CRUISE. general, it has a better performance 
+than individual 
+classifiers. The second method, which 
+is called online CMC, uses all the classifiers followed 
+by a vote. 
+The class getting 
+the maximum votes from the 
+individual classifiers will 
+be assigned to the test sample. This method intuitively seems to be better than the previous 
+one. However, when tried on some cases of OUT dataset, the esults were not better than 
+the best result in previous method. So, we changed the rule 
+of najority vote from 
+getting more than 50% voles to gelling more 
+than 75% votes. This resulted in a significant improvement over 
+offline CMC. Using the second method, 
+we showed that CMC can achieve a significant 
+accuracy improvement 
+in all three cases of 2, 3, and 9-classes for the PHY183 data, in which we are going 
+to use GA to optimize the 
+CMC performance. MAPTHE PROBLEM TO GENETIC ALGORITHM Genetic Algorithms have 
+been shown to be 
+an effective tool 
+to use indata mining and pattern 
+recognition [5]-[12].. An important aspect 
+of GAS in a learning context 
+is their use in pattern recognition. 
+There are two different ipproaches 
+to applying GA in pattern recognition: 
+Apply a 
+CA directly as a classifier. Bandyopadhyay 
+and Murthy in [I31 applied CA to find the decision boundary in N dimensional feature space. 
+Use a GA as an optimization tool for resetting the parameters in other classifiers. Most applications of 
+GAS in pattern recognition optimize some 
+parameters in the classification process. Many researchers have used GAS in feature selection [14]-[17]. GAS has been applied to find an optimal set 
+of feature weights 
+that improve classification accuracy. First, a traditional 
+feature extraction 
+method such as Principal Component Analysis (PCA) 
+is applied, and 
+then a classifier such 
+as k-NN is used to calculate the fitness function for GA 
+[IS]. Combination ofclassifiers is another area 
+that GAS have been used 
+to optimize. Kuncheva and Jain 
+in [I91 used a CA for selecting the features 
+as well as selecting the types of 
+individual classifiers in their design of a 
+Classifier Fusion 
+System. GA is also used in selecting the prototypes 
+in the case-based classification 
+[ZO]. In this paper 
+we will focus on the second approach and use a GA to optimize a combination of classifiers. Our objective is to predict the students final grades based on 
+their web-use 
+features, which 
+are extracted from 
+the homework data. We design, implement, 
+and evaluate a 
+series of pattern classifiers with various parameters 
+in order to compare their performance on a dataset from 
+LON-CAPA. 0-7803-7961-6/03/$17.00 0 2003 IEEE 33d ASEE/IEEE Frontiers in Education 
+Conference TZA-I5 November 5-8,2003, Boulder, CO Authorized licensed use limited to: QUAID E AZAM UNIVERSITY. Downloaded on November 30,2020 at 04:24:22 UTC from IEEE Xplore.  Restrictions apply. Session T2A validation by dividing the total number of misclassified examples into total number OF test examples. Therefore, 
+our /ittiess futrction measures the 
+error rate achieved by performance (minimize 
+the error rate). 
+CMC and our objective would be to maximize this EXPERIMENT RESULTS Error rates for the individual classifiers, their combination 
+and the GA optimized combination are presented. 
+Optimizing the CMC Using a CA We used GATOOIBOX~ for MATLAB to implement a GA to optimize classification performance. 
+Our goal is to find a population of best weights for 
+every feature vector, which minimize the classification error rate. 
+The feature vector 
+for our predictors are 
+the set of six variables for every student: 
+Success rate, Success at the first try, Number of attempts before correct 
+answer is derived, the time at which the student got 
+the problem correct relative 
+to the due date, 
+total time spent on the 
+problem, and 
+the number 
+of online interactions of 
+the student both with 
+other students and 
+with the instructor. We randomly 
+initialized a population of six dimensional weight vectors with values between 0 and 
+I, corresponding to the feature vector and experimented 
+with different 
+number of population 
+sizes. We found good results using a population with 200 individuals. The GA Toolbox supports 
+binary, integer, reahalued and floating-point chromosome 
+representations. We used the simple genetic 
+algorithm (SGA), which is described by G oldberg in [ 2 I]. The S GA uses common 
+CA operators to find a population oFsolutions which optimize the fitness 
+values. Fitness Function 
+During the reproduction phase, each individual 
+is assigned a fitness value derived 
+from its raw performance measure 
+given by 
+the objective function. 
+This value 
+is used in the selection 0 bias towards more fit individuals. Highly 
+fit individuals. relative to the whole 
+population, have a high probability of being selected 
+for mating whereas less fit 
+individuals have a correspondingly low probability of being 
+selected. The error rate is measured in each round of cross Performance % Classifier 2Classes 3Clasrer 9Clanrer CMCof4C1assifrrs without GA 8387 k 1.73 61.86 f 2.16 49.74 f 1.86 CA Optimized CMC, ~~~~i~,ji~d~~l 94.09f2.84 72.13f0.39 62.25c0.63 lmprovment 10.2zi 1.92 10.26i. 1.84 12.51 & 1.75 TABLE 4 COMPANNC THEERROR RATEOFALLCLASSIFIERS ONPHY 183 OATASETIN THECASESOP 2-aASSES 3cLASSESS AND9-aASSES USING IO-FOLO CROSS VALIDATIOK WITHOUTW For GA optimization, 
+we used 200 individuals in our population, running the 
+CA for 500 generations. We 
+ran the program 10 times and 
+show the averages 
+in table 5. In every run, 500 X 200 times fitness function are 
+used in the IO-fold cross validation 
+to measure the average 
+performance of 
+CMC. Thus every classifier 
+is called 3 x IO6 times for the case of 2-ciasses. 3-classes and 9-classes. The time overhead 
+for fitness evaluation is therefore 
+a critical issue. Since using the MLP 
+in this process 
+takes about 
+2 minutes while the 
+other four 
+non-tree Classifiers (Bayes, INN, 3. and Parzen window) take only 3 seconds collectively, we omitted the MLP 
+from our 
+classifiers group so we could obtain the results in a reasonable time. 
+TABLE 5 COMPANNCTHECMCPERFORMANCE o~PHY183 DATASET USINGGA Authorized licensed use limited to: QUAID E AZAM UNIVERSITY. Downloaded on November 30,2020 at 04:24:22 UTC from IEEE Xplore.  Restrictions apply. Session T2A FIGURE 2 WITHOUTCA. CWRTOF COMPARINGCMCAVERAGEPERFORMANCE, USING GA AND L,""C Pn(o"".nse WiVlD", OA 0 OA Opfimizcd CMC I rm 2-c,.**cr Figure 3 shows the best result 
+of the ten runs 
+over our dataset. These charts represent 
+the population mean, the best 
+individual at each generation 
+and the best value yielded by the run. FIGURE 3 GRAPH OFGA @TIMIZED CMCPERFORMANCE MTHECASEOF 2,3,AND Finally, we 
+can examine the individuals 
+(weights) for 
+features by which 
+we obtained the improved results. 
+This feature weighting indicates 
+the importance of each feature for making the required classification. 
+In most cases the results are similar 
+to Multiple Linear Regressions 
+or tree- based software that use 
+statistical methods to measure feature importance. Table 6 shows the 
+importance of the six features in the 3classes case 
+using the Entropy splitting 
+criterion. Based on entropy, a statistical property called 
+information goin measures how 
+well a 
+given feature separates the training 
+examples in relation to their target 
+classes. Entropy characterizes impurity of an arbitrary collection of examples S at a specific node N. In [22] the impurity of a node N is denoted 
+by i(N) such that: 
+where 49) is the fraction 
+of examples at node N that go to TABLE 6 FEATURE IMPORTANCE INl-(ZASSES USING FNTROPY CRmRlON 1mpOrtanee % Tatal_Col~ect _Answers 100.00 Total_Number-of_T"eS 58.61 First_Ciot_Colrect 27.70 Time-Spent-to-Solve 24.60 Total-Time-Sp ert 24.47 Communication 9.21 The CA results also 
+show that the "Total 
+number of correct answers" and 
+the 'Total number of tries" 
+are the 
+most important 
+features for 
+the classification. The second 
+column in table 6 shows the percentage 
+of feature As a result, 
+having the information generated through 
+our experiment the instructor 
+would be able to identify 
+students at risk early, especially 
+in very large classes, 
+and allow the instructor 
+to provide appropriate advising 
+in a timely manner. .. - -- 0-7803-7961-6/03/$17.00 0 2003 IEEE November 5-8,2003, Boulder, CO 33'd ASEElIEEE Frontiers 
+in Education Conference 
+T2A-17 Authorized licensed use limited to: QUAID E AZAM UNIVERSITY. Downloaded on November 30,2020 at 04:24:22 UTC from IEEE Xplore.  Restrictions apply. Session T2A [5] Freitas, A.A. "A survey of Evolutbnaly Algorithms for Data Mining and Knobledge Discovery",See: 
+www.pgia.pucpr.brl-alexiplpers. To appear in: A. Ghosh and S. Tsutsui. (Ede.)Advnncer in Evnlurionnry Compulnrion. Sprhgec Vdag, 2M12. lain, A. K.; Zongker, D. "Fcature Selection: Evaluation, Application, and Small Sample Performance", IEEE Transodion on Pollen, Annlysis ond Mnchineln:el/ige,ice, Val. 19, No. 2, February 1991. 
+Wiley & Sans, 1998. Pei, M., Goodman, E.D., and Punch,W.F. "Pattem 
+Discovely from Data Using 
+Genetic Algonlhmr", Proceeding of I" Pncrlic-Asin Confirenee Knowledge Discovev & Dol" Mining (PAKDD-97). 
+Feb 1997. CONCLUSIONS AND FUTURE WORK Four classifiers were used A combination of multiple classifiers leads 
+to a significant accuracy improvement in all Weighing the features and using a genetic algorithm 
+to minimize the error rate improves the prediction accuracy at least 
+10% in the all 
+features is low, the 
+feature weighting worked 
+much better than feature selection, ~h~ successful optimization of student classification 
+in all three cases 
+demonstrates the merits of usine the LON-CAPA data to Dredicl the students' segregate the [6] of 2, and   cl asses, where the number of [7] Falkenauer E. GenelicA~go~ilhmsnndGroupingProbiems John [8l ~ [9] Park Y and Song M. "A genetic algorithm for clustering problems. Genetic Programming" 
+Proceeding of 3rd Aanuol Confimtee. 568- 575. Morgan Kauhann.1998. Programs". 3rd Ed. Springer-Verlng. 1996. algorithms for canceptleaming". Modine Leoming 13, 161 -188, final grades based on their features, which are 
+extracted from the homework data. 
+We are going to gather 
+more sample 
+data by combining one course data during 
+several Semesters to avoid overfittins in the case of %Classes. We 
+also try to find 
+the paths that 
+students usually choose 
+to solve the different types 
+of the problems from activity log to extract more relevant features. 
+We also want to aoolv Evolutionarv 
+Aleorithms to 
+find 1993. [ Michalewicr z. Algonthmr + Data Structures= Pvolution [I I] De Jong K.A., Spears W.M. and Gordon D.F. (I 993). "Using genetic ,, , 1- Association Rules and Bpendency among the groups 
+of problems (Molhenioricol. Optional Response. 
+Numerical, Java Appler. and so forth) of LON-CAPA homework data 
+sets. The 
+present investigation 
+has dealt only with homework 
+data; other components 
+ofthe course such 
+as quizzes, mid- term examination, 
+and attendance can be predictive of outcome, and will bc 
+included in further studies [4]. As more and more students 
+enter the onlinc 
+learning environment, databases concerning 
+student access and study patterns will grow. In this paper 
+we have 
+shown that data mining efforts can be useful 
+in predicting student outcomes. 
+We hope to refine 
+our techniques so that the 
+information generated by data mining can be usefully applied 
+by instructors to increase student learning. 
+ACKNOWLEDGMENT This work was partially supported by the National Science Foundation under ITR 
+0085921. We are 
+thankful to Prof. 
+Edwin Kashy for 
+his help and cooperation. REFERENCES Konemeyer, G., Bauer, W., Kashy, D. A., Khshy, E., & Speier, C., 'me LeamingOnline Network with CAPA Inilialivc", Procecdbigs of ,lie Fronrierr in Educnlion corgGereiicf, 2001. See also: http:llwww.lancapa.org Kanhy, D. A., Albertelli, G., Ashkenazi, G., Kanhy E. Ng, H. K., & Thoennessen, M., "Individualized intractive cxcrciscs: A promising role far network technology", Proceedings o/rhe Froriliers in Edueolion confirence, 200 I Albenelli,G., Minaei-Bigdoli, B., Punch. W.F., Kortemeyer. G.. & Kashy, E., "Concept Feedback 
+In Computer-Assisted Assigfimentr", 
+Proceedings of rhe Froriliers in Educnliori cot~eu~ence, 2W2. Kashy, D. 
+A., Albenelli, G..Karhy. E. &Thoenncssen, M. "Teaching with ALN Tcchnology: Benefits 
+and Casts",Jorminl of E,igi,zeeritzg Educnrion. 90,499-506,2001 0-7803-7961-6/03/$17.00 0 2003 IEEE November 5-8.2003, Boulder, CO 33'd ASEEilEEE Frontiers in Education Conference T2A-18 Authorized licensed use limited to: QUAID E AZAM UNIVERSITY. Downloaded on November 30,2020 at 04:24:22 UTC from IEEE Xplore.  Restrictions apply. 
